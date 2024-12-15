@@ -123,7 +123,7 @@ export const NavBar = () => {
     windowDimention.width > 1070 &&
     <ul className={styles.linksContainer}>
     {links.map((x) => (
-      <div>
+      <div key={x.id}>
         <Link
         onClick={()=>{
           setNavBarOpen(false)
