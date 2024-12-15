@@ -1,9 +1,22 @@
 
 
 
-export type ValidTechs = "JavaScript" | "TypeScript" | 
-"HTML" | "CSS" | "React.js" | "Next.js" | "Node.js" | "PosgreSQL" | "MySQL" 
-| "React Native" | "Angular" | "Tailwind" | "Bootstrap" | "MySQL" | "Docker" | "Prisma"
+export type ValidTechs = 
+    | "JavaScript" 
+    | "TypeScript" 
+    | "HTML" 
+    | "CSS" 
+    | "React.js" 
+    | "Next.js" 
+    | "Node.js" 
+    | "PosgreSQL" 
+    | "MySQL" 
+    | "React Native" 
+    | "Angular" 
+    | "Tailwind" 
+    | "Bootstrap" 
+    | "Docker" 
+    | "Prisma";
 
 export interface Techs {
     name?: ValidTechs,

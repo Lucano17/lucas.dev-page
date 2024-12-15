@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./ProjectCard.module.css";
-import myProjects from "@/api/projects/my-projects.json";
 import { Project } from "@/interfaces/projects.interface";
 
 interface Props {
@@ -10,9 +9,17 @@ interface Props {
 export const ProjectCard = ({ project }: Props) => {
   return (
     <div className={styles.container}>
-      <h3>Título</h3>
-      <div className={styles.imagesContainer}>IMAGEN</div>
-      <div className={styles.techsContainer}>Technologies</div>
+      <h3>{project?.title}</h3>
+      <div className={styles.imagesContainer}>{project?.images}</div>
+      <div className={styles.techsContainer}>
+        {project?.techsUsed &&
+          project.techsUsed.length > 0 &&
+          project.techsUsed.map((tech, index) => (
+            <span key={index} className={styles.tech}>
+              {tech.name}
+            </span>
+          ))}
+      </div>
     </div>
   );
 };

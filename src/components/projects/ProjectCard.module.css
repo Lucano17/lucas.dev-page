@@ -5,13 +5,13 @@
     border: 2px solid rgb(255, 0, 170);
     border-radius: 5px;
     min-width: 200px;
-    min-height: 225px;
+    min-height: 245px;
 }
 
 .container h3 {
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    height: 25px;
 }
 
 .imagesContainer {
