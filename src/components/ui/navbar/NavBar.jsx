@@ -10,10 +10,6 @@ import { useScrollPosition } from '@/hooks/scrollPosition';
 
 export const NavBar = () => {
   const  [navBarOpen, setNavBarOpen] = useState(false)
-  const [windowDimention, setWindowDimention] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
-  })
 // activeSection
   const [activeSection, setActiveSection] = useState('Home');
   const handleSectionClick = (sectionName) => {
@@ -21,20 +17,31 @@ export const NavBar = () => {
     setNavBarOpen(false);
   };
 
-  const detectDimention = ()=>{
-    setWindowDimention(
-    {width: window.innerWidth,
-    height: window.innerHeight
-    })
-  }
+  const [windowDimention, setWindowDimention] = useState({
+    width: 0,
+    height: 0,
+  });
   
-  useEffect(()=>{
-    window.addEventListener("resize", detectDimention)
-    windowDimention.width > 1070 && setNavBarOpen(false)
-    return ()=>{
-      window.removeEventListener("resize", detectDimention)
-    }
-  },[windowDimention])
+  useEffect(() => {
+    // Se ejecuta en el cliente
+    setWindowDimention({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  
+    const detectDimention = () => {
+      setWindowDimention({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+  
+    window.addEventListener("resize", detectDimention);
+    return () => {
+      window.removeEventListener("resize", detectDimention);
+    };
+  }, []);
+  
 
   const links = [
     {

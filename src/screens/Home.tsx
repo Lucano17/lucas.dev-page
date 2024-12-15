@@ -1,17 +1,29 @@
 import React from "react";
 import styles from "./Home.module.css";
 import { TechnologiesCard } from "@/components/technologies/TechnologiesCard";
+import { IoLogoGithub } from "react-icons/io5";
+import { BiLogoGmail } from "react-icons/bi";
 
 const principalTitle = "Tecnologías principales";
 const principalTechs = [
+  "HTML",
+  "CSS",
   "Javascript",
   "TypeScript",
   "React",
   "Next.js",
   "Node.js",
-  "MySQL",
   "PosgreSQL",
   "MongoDB",
+];
+
+const secondaryTitle = "Tecnologías ocasionales";
+const secondaryTechs = [
+  "React Native",
+  "Angular",
+  "Tailwind",
+  "Bootstrap",
+  "MySQL",
 ];
 
 export const HomePage = () => {
@@ -35,12 +47,17 @@ export const HomePage = () => {
             WEB DEVELOPER <br />
             <span>de la fuente, Lucas</span>
           </h1>
+          <div className={styles.socialWebs}>
+        <IoLogoGithub/>
+        <BiLogoGmail/>
+      </div>
         </aside>
       </div>
 
-      <div className={styles.socialWebs}></div>
+      
       <div className={styles.technologies}>
         <TechnologiesCard title={principalTitle} techs={principalTechs} />
+        <TechnologiesCard title={secondaryTitle} techs={secondaryTechs}/>
       </div>
     </div>
   );
