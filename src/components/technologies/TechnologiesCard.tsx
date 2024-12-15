@@ -9,7 +9,7 @@ interface Props {
 export const TechnologiesCard = ({title, techs}: Props) => {
   return (
     <div className={styles.container}>
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <ul>
 
         {techs.map((tech)=>(

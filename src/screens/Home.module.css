@@ -5,5 +5,30 @@
 
 .sectionContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.sectionContainer section {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionContainer p {
+    text-align: left;
+    width: 300px;
+}
+
+.socialWebs {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
 }

@@ -34,12 +34,14 @@ export const HomePage = () => {
           <p>
             <b>Bienvenidos a mi página web!</b>
             <br />
-            Soy un <b>programador front-end</b> con un gran apetito <br />
-            por construir increibles aplicaciones web y mobile que ayuden <br />
-            a las personas y sus negocios a crecer exponencialmente. <br />
-            Busco también adentrarme cada vez más en tecnologías <b>back-end</b>
+            Soy un <b>programador front-end</b> <br />
+            con un gran apetito por construir increibles aplicaciones web y
+            mobile que ayuden a las personas y sus negocios a crecer
+            exponencialmente. <br />
+            Busco también adentrarme cada vez más en tecnologías <b>back-end</b>.
             <br />
-            Colabora conmigo y <b>alcancemos juntos éxito!</b>
+            Colabora conmigo y <br />
+            <b>alcancemos juntos éxito!</b>
           </p>
         </section>
         <aside>
@@ -48,16 +50,15 @@ export const HomePage = () => {
             <span>de la fuente, Lucas</span>
           </h1>
           <div className={styles.socialWebs}>
-        <IoLogoGithub/>
-        <BiLogoGmail/>
-      </div>
+            <IoLogoGithub />
+            <BiLogoGmail />
+          </div>
         </aside>
       </div>
 
-      
       <div className={styles.technologies}>
         <TechnologiesCard title={principalTitle} techs={principalTechs} />
-        <TechnologiesCard title={secondaryTitle} techs={secondaryTechs}/>
+        <TechnologiesCard title={secondaryTitle} techs={secondaryTechs} />
       </div>
     </div>
   );
