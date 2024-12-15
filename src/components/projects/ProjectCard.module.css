@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(255, 0, 170);
+    border-radius: 5px;
+    min-width: 200px;
+    min-height: 225px;
+}
+
+.container h3 {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.imagesContainer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid pink;
+    border-bottom: 1px solid pink;
+    margin-top: 10px;
+    width: 200px;
+    height: 125px;
+    padding: 0;
+}
+
+.techsContainer {
+    margin-top: 5px;
+}
