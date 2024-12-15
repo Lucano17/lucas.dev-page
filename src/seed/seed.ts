@@ -4,7 +4,7 @@ interface ProjectsData {
     projects: Project[]
 }
 
-export const Projects: ProjectsData = {
+export const projects: ProjectsData = {
 
     projects: [
 
