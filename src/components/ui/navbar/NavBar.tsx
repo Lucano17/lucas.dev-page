@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Link } from "react-scroll";
 import styles from "./NavBar.module.css";
 import { useState, useEffect } from "react";
 import { IoMenu } from "react-icons/io5";
@@ -12,7 +11,25 @@ export const NavBar = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
   // activeSection
   const [activeSection, setActiveSection] = useState("Home");
-  const handleSectionClick = (sectionName) => {
+
+  const handleSectionClick = (sectionName: string) => {
+    const section = document.getElementById(sectionName);
+    const navBarHeight = document.getElementById("NavBar")?.offsetHeight || 0;
+  
+    if (sectionName === "Home") {
+      // Lleva directamente al top absoluto para "Home"
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else if (section) {
+      const sectionTop = section.offsetTop - navBarHeight;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
+    }
+  
     setActiveSection(sectionName);
     setNavBarOpen(false);
   };
@@ -42,22 +59,10 @@ export const NavBar = () => {
   }, []);
 
   const links = [
-    {
-      id: 1,
-      link: "Home",
-    },
-    {
-      id: 2,
-      link: "Projects",
-    },
-    {
-      id: 3,
-      link: "HowWeWork",
-    },
-    {
-      id: 4,
-      link: "Contact",
-    },
+    { id: 1, link: "Home" },
+    { id: 2, link: "Projects" },
+    { id: 3, link: "HowWeWork" },
+    { id: 4, link: "Contact" },
   ];
 
   const scrollPosition = useScrollPosition();
@@ -65,7 +70,7 @@ export const NavBar = () => {
   return (
     <>
       <div
-        name="NavBar"
+        id="NavBar"
         className={
           navBarOpen
             ? styles.navOpen
@@ -102,25 +107,18 @@ export const NavBar = () => {
               {links.map((x) => (
                 //key id activeSection
                 <div key={x.id}>
-                  <Link
-                    onClick={() => {
-                      setNavBarOpen(false);
-                      handleSectionClick(x.link);
-                    }}
-                    to={x.link}
-                    smooth
-                    duration={500}
+                  <button
+                    onClick={() => handleSectionClick(x.link)}
                     className={`${styles.navLink} ${
                       activeSection === x.link ? styles.activeSection : ""
                     }`}
                   >
                     {x.link === "HowWeWork"
                       ? "How We Work"
-                      : x.link
-                      && x.link === "Projects"
+                      : x.link && x.link === "Projects"
                       ? "Proyectos"
                       : x.link}
-                  </Link>
+                  </button>
                   <div className={styles.border}></div>
                 </div>
               ))}
@@ -131,26 +129,20 @@ export const NavBar = () => {
           <ul className={styles.linksContainer}>
             {links.map((x) => (
               <div key={x.id}>
-                <Link
+                <button
                   onClick={() => {
-                    setNavBarOpen(false);
-                    // activeSection
                     handleSectionClick(x.link);
                   }}
-                  to={x.link}
-                  smooth
-                  duration={500}
                   className={`${styles.navLink} ${
                     activeSection === x.link ? styles.activeSection : ""
                   }`}
                 >
                   {x.link === "HowWeWork"
-                      ? "How We Work"
-                      : x.link
-                      && x.link === "Projects"
-                      ? "Proyectos"
-                      : x.link}
-                </Link>
+                    ? "How We Work"
+                    : x.link && x.link === "Projects"
+                    ? "Proyectos"
+                    : x.link}
+                </button>
                 <div className={styles.border}></div>
               </div>
             ))}
