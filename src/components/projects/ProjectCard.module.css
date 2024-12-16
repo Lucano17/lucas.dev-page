@@ -8,10 +8,30 @@
     min-height: 245px;
 }
 
+.linksContainer {
+    position: absolute;
+    display: flex;
+    margin-top: -15px;
+    margin-right: -160px;
+    gap: 10px;
+}
+
+.linkItem {
+    background-color: black;
+}
+
+.webItem {
+    font-size: 22px;
+}
+
+.gitItem {
+    font-size: 25px;
+}
+
 .container h3 {
     display: flex;
     align-items: center;
-    height: 25px;
+    height: 40px;
     font-size: 14px;
 }
 
@@ -26,7 +46,8 @@
 }
 
 .techsContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     margin-top: 5px;
     gap: 10px;
 }

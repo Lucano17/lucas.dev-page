@@ -25,7 +25,7 @@ export const projects: ProjectsData = {
             "title": "ecommerce-template-1",
             "gitHubLink": "https://github.com/Lucano17/ecommerce-template-1",
             "webLink": "https://ecommerce-template-1.vercel.app/",
-            "images": [],
+            "images": ["ecommerce-template.image1.png"],
             "description": "Este es un ecommerce de prueba hecho con Next y PosgreSQL, donde probé todas mis habilidades en conjunto para crear una tienda completamente funcional con base de datos y transacciones.",
             "techsUsed": [
                 { name: "TypeScript" },
@@ -39,7 +39,7 @@ export const projects: ProjectsData = {
         {
             "id": 3,
             "title": "mern-crud-auth",
-            "gitHubLink": "mern-crud-auth",
+            "gitHubLink": "https://github.com/Lucano17/mern-crud-auth",
             "webLink": "",
             "images": [],
             "description": "Una TO-DO app hecha con react y express, donde puedes crear una lista de lo que necesites! Desde productos para comprar, actividades a realizar, personas, objetivos y más!",

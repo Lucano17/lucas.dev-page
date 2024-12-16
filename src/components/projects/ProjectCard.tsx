@@ -1,6 +1,8 @@
 import React, { JSX } from "react";
 import styles from "./ProjectCard.module.css";
 import { Project } from "@/interfaces/projects.interface";
+import { IoLogoGithub } from "react-icons/io5";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import {
   SiJavascript,
   SiTypescript,
@@ -18,6 +20,8 @@ import {
   SiDocker,
   SiPrisma,
 } from "react-icons/si";
+import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   project?: Project;
@@ -45,13 +49,23 @@ const techIcons: Record<string, JSX.Element> = {
 export const ProjectCard = ({ project }: Props) => {
   return (
     <div className={styles.container}>
+        <div className={styles.linksContainer}>
+        <Link href={`${project?.webLink}`} target="_blank"><FaExternalLinkAlt className={`${styles.linkItem} ${styles.webItem}`}/></Link>
+        <Link href={`${project?.gitHubLink}`} target="_blank"><IoLogoGithub className={`${styles.linkItem} ${styles.gitItem}`}/></Link>
+        </div>
       <h3>{project?.title}</h3>
 
       {/* Renderizar imágenes */}
       <div className={styles.imagesContainer}>
         {project?.images && project.images.length > 0 ? (
           project.images.map((image, index) => (
-            <img key={index} src={image} alt={`Image ${index + 1}`} />
+            <Image
+              key={project.title}
+              src={`/projects/${image}`}
+              alt={project?.title || "Imagen del proyecto"}
+              width={200}
+              height={125}
+            />
           ))
         ) : (
           <p>No hay imágenes disponibles</p>
@@ -60,15 +74,13 @@ export const ProjectCard = ({ project }: Props) => {
 
       {/* Renderizar tecnologías */}
       <div className={styles.techsContainer}>
-        {project?.techsUsed && project.techsUsed.length > 0 ? (
-          project.techsUsed.map((tech, index) => (
-            <div key={index} className={styles.tech} title={tech.name}>
-              {techIcons[tech.name || ""] || null}
-            </div>
-          ))
-        ) : (
-          ""
-        )}
+        {project?.techsUsed && project.techsUsed.length > 0
+          ? project.techsUsed.map((tech, index) => (
+              <div key={index} className={styles.tech} title={tech.name}>
+                {techIcons[tech.name || ""] || null}
+              </div>
+            ))
+          : ""}
       </div>
     </div>
   );
