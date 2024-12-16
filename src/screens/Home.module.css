@@ -13,13 +13,17 @@
     flex-direction: column;
 }
 
+.sectionContainer section p b {
+    color: rgb(252, 103, 195);
+}
+
 .sectionContainer p {
     text-align: left;
     width: 300px;
 }
 
 .socialWebs {
-    color: rgb(255, 0, 170);;
+    color: rgb(255, 0, 170);
     display: flex;
     justify-content: center;
     margin-top: 15px;

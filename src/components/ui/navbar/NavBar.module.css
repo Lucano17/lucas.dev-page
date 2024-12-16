@@ -70,11 +70,11 @@
 
 .logo span {
     margin-right: 10px;
-    color: rgb(239, 61, 255);
+    color: rgb(255, 0, 170);
 }
 
 .activeSection {
-    color: rgb(252, 103, 195);
+    color: rgb(255, 0, 170);
 }
 
 .linksContainer {

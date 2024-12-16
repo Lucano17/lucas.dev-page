@@ -32,12 +32,12 @@ export const HomePage = () => {
       <div className={styles.sectionContainer}>
         <section>
           <p>
-            <b>Bienvenidos a mi página web!</b>
+            <b>Bienvenidos</b> a mi página web!
             <br />
             Soy un <b>programador front-end</b> <br />
-            con un gran apetito por construir increibles aplicaciones web y
-            mobile que ayuden a las personas y sus negocios a crecer
-            exponencialmente. <br />
+            con un gran apetito por construir increibles <b>aplicaciones web</b> y
+            <b>mobile</b> que ayuden a las personas y sus negocios a <b>crecer
+            exponencialmente</b>. <br />
             Busco también adentrarme cada vez más en tecnologías <b>back-end</b>.
             <br />
             Colabora conmigo y <br />
@@ -46,9 +46,9 @@ export const HomePage = () => {
         </section>
         <aside>
           <h1>
-            WEB DEVELOPER <br />
-            <span>de la fuente, Lucas</span>
+            WEB DEVELOPER
           </h1>
+          <p>de la fuente, Lucas</p>
           <div className={styles.socialWebs}>
             <IoLogoGithub />
             <BiLogoGmail />
