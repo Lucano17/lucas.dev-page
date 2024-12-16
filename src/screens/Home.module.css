@@ -5,12 +5,13 @@
 
 .sectionContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .sectionContainer section {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .sectionContainer section p b {
@@ -22,9 +23,20 @@
     width: 300px;
 }
 
+.sectionContainer aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionContainer aside p {
+    text-align: center;
+}
+
 .profileImage {
-    border-radius: 50%; /* Esto hará la imagen redonda */
-    overflow: hidden; /* Esto asegura que la imagen se recorte de manera adecuada */
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
   }
 
 .socialWebs {

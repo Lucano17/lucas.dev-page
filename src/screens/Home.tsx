@@ -50,7 +50,7 @@ export const HomePage = () => {
         </section>
         <aside>
           <h1>DESARROLLADOR WEB</h1>
-          <p>de la fuente, Lucas</p>
+          <p>de la Fuente, Lucas</p>
 
           <Image
             src="/profile/profile-photo.jpg"
