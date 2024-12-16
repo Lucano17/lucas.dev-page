@@ -58,3 +58,18 @@
     margin-top: 30px;
     gap: 20px;
 }
+
+@media (max-width: 650px) {
+    .sectionContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionContainer section {
+        order: 2;
+        margin-left: 50px;
+      }
+    
+      .sectionContainer aside {
+        order: 1;
+      }
+}
