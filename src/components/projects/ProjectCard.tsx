@@ -81,8 +81,6 @@ export const ProjectCard = ({ project }: Props) => {
           <p>No hay imágenes disponibles</p>
         )}
       </div>
-
-      {/* Renderizar tecnologías */}
       <div className={styles.techsContainer}>
         {project?.techsUsed && project.techsUsed.length > 0
           ? project.techsUsed.map((tech, index) => (
