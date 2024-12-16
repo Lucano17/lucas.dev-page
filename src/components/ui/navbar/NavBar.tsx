@@ -13,14 +13,17 @@ export const NavBar = () => {
   const [activeSection, setActiveSection] = useState("Home");
 
   const handleSectionClick = (sectionName: string) => {
-    const section = document.getElementById(sectionName);
-  
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start", // O "center" si prefieres centrarlo
-        inline: "nearest",
-      });
+    if (sectionName === "Home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const section = document.getElementById(sectionName);
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
     }
   
     setActiveSection(sectionName);
