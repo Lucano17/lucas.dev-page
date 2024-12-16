@@ -3,7 +3,7 @@ import styles from "./Contact.module.css"
 
 export const Contact = () => {
   return (
-    <div data-name="Contact" className={styles.contact}>
+    <div id="Contact" className={styles.contact}>
       <h2>Contact</h2>
       <form className={styles.form} method='post' action="https://getform.io/f/raeqrega">
         <label htmlFor="Name">Full name</label>
