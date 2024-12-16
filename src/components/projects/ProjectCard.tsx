@@ -28,7 +28,7 @@ interface Props {
 }
 
 // Mapeo de nombres de tecnologías a íconos
-const techIcons: Record<string, JSX.Element> = {
+export const techIcons: Record<string, JSX.Element> = {
   JavaScript: <SiJavascript />,
   TypeScript: <SiTypescript />,
   HTML: <SiHtml5 />,

@@ -5,27 +5,28 @@ import { IoLogoGithub } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import Image from "next/image";
 import Link from "next/link";
+import { Techs } from "@/interfaces/projects.interface";
 
 const principalTitle = "Tecnologías principales";
-const principalTechs = [
-  "HTML",
-  "CSS",
-  "Javascript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "PosgreSQL",
-  "MongoDB",
+const principalTechs: Techs[] = [
+  { name: "HTML" },
+  { name: "CSS" },
+  { name: "JavaScript" },
+  { name: "TypeScript" },
+  { name: "React.js" },
+  { name: "Next.js" },
+  { name: "Node.js" },
+  { name: "PosgreSQL" },
+  { name: "MySQL" },
 ];
 
 const secondaryTitle = "Tecnologías ocasionales";
-const secondaryTechs = [
-  "React Native",
-  "Angular",
-  "Tailwind",
-  "Bootstrap",
-  "MySQL",
+const secondaryTechs: Techs[] = [
+  { name: "React Native" },
+  { name: "Angular" },
+  { name: "Tailwind" },
+  { name: "Bootstrap" },
+  { name: "MySQL" },
 ];
 
 export const HomePage = () => {
@@ -76,8 +77,8 @@ export const HomePage = () => {
       </div>
 
       <div className={styles.technologies}>
-        <TechnologiesCard title={principalTitle} techs={principalTechs} />
-        <TechnologiesCard title={secondaryTitle} techs={secondaryTechs} />
+        <TechnologiesCard title={principalTitle} techsUsed={principalTechs} />
+        <TechnologiesCard title={secondaryTitle} techsUsed={secondaryTechs} />
       </div>
     </div>
   );

@@ -4,3 +4,8 @@
     align-items: center;
     margin-top: 60px;
 }
+
+.container h2 {
+    color: rgb(252, 103, 195);
+    border-bottom: 1px solid pink;
+}

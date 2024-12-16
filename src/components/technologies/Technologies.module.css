@@ -4,11 +4,17 @@
     align-items: center;
 }
 
+.container h2 {
+    color: rgb(252, 103, 195);
+}
+
 .container ul {
     display: flex;
     gap: 10px;
 }
 
 .container li {
+    display: flex;
+    flex-direction: column;
     list-style: none;
 }
