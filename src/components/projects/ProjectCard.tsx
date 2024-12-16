@@ -19,6 +19,7 @@ import {
   SiBootstrap,
   SiDocker,
   SiPrisma,
+  SiMongodb,
 } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,6 +45,7 @@ export const techIcons: Record<string, JSX.Element> = {
   Bootstrap: <SiBootstrap />,
   Docker: <SiDocker />,
   Prisma: <SiPrisma />,
+  MongoDB: <SiMongodb/>
 };
 
 export const ProjectCard = ({ project }: Props) => {

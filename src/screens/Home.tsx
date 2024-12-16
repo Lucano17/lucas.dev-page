@@ -17,7 +17,7 @@ const principalTechs: Techs[] = [
   { name: "Next.js" },
   { name: "Node.js" },
   { name: "PosgreSQL" },
-  { name: "MySQL" },
+  { name: "MongoDB" },
 ];
 
 const secondaryTitle = "Tecnologías ocasionales";

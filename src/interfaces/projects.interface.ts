@@ -11,6 +11,7 @@ export type ValidTechs =
     | "Node.js" 
     | "PosgreSQL" 
     | "MySQL" 
+    | "MongoDB"
     | "React Native" 
     | "Angular" 
     | "Tailwind" 

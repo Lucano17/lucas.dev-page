@@ -14,19 +14,12 @@ export const NavBar = () => {
 
   const handleSectionClick = (sectionName: string) => {
     const section = document.getElementById(sectionName);
-    const navBarHeight = document.getElementById("NavBar")?.offsetHeight || 0;
   
-    if (sectionName === "Home") {
-      // Lleva directamente al top absoluto para "Home"
-      window.scrollTo({
-        top: 0,
+    if (section) {
+      section.scrollIntoView({
         behavior: "smooth",
-      });
-    } else if (section) {
-      const sectionTop = section.offsetTop - navBarHeight;
-      window.scrollTo({
-        top: sectionTop,
-        behavior: "smooth",
+        block: "start", // O "center" si prefieres centrarlo
+        inline: "nearest",
       });
     }
   
@@ -61,7 +54,7 @@ export const NavBar = () => {
   const links = [
     { id: 1, link: "Home" },
     { id: 2, link: "Projects" },
-    { id: 3, link: "HowWeWork" },
+    // { id: 3, link: "HowWeWork" },
     { id: 4, link: "Contact" },
   ];
 
