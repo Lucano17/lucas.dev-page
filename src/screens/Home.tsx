@@ -4,6 +4,7 @@ import { TechnologiesCard } from "@/components/technologies/TechnologiesCard";
 import { IoLogoGithub } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import Image from "next/image";
+import Link from "next/link";
 
 const principalTitle = "Tecnologías principales";
 const principalTechs = [
@@ -57,12 +58,19 @@ export const HomePage = () => {
             alt="profile-photo"
             width={130}
             height={130}
-            className={styles.profileImage} 
+            className={styles.profileImage}
           />
 
           <div className={styles.socialWebs}>
-            <IoLogoGithub />
-            <BiLogoGmail />
+            <Link href="https://github.com/Lucano17" target="_blank">
+              <IoLogoGithub />
+            </Link>
+            <Link
+              href="/mailRedirect"
+              target="_blank"
+            >
+              <BiLogoGmail />
+            </Link>
           </div>
         </aside>
       </div>

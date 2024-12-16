@@ -29,6 +29,10 @@
     align-items: center;
 }
 
+.sectionContainer aside h1 {
+    color: rgb(252, 103, 195);
+}
+
 .sectionContainer aside p {
     text-align: center;
 }
