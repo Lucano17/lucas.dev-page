@@ -10,11 +10,17 @@
 
 .container ul {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .container li {
     display: flex;
     flex-direction: column;
+    align-items: center;
     list-style: none;
+    margin-top: 5px;
+}
+
+.techName {
+    font-size: 10px;
 }

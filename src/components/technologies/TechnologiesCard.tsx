@@ -16,8 +16,8 @@ export const TechnologiesCard = ({techsUsed, title}: Props) => {
 
         {techsUsed.map((tech)=>(
             <li key={tech.name}>
-              {techIcons[tech.name || ""] || null}
-              {tech.name}
+              <p className={styles.techIcon}>{techIcons[tech.name || ""] || null}</p>
+              <p className={styles.techName}>{tech.name}</p>
               </li>
         ))}
         </ul>
