@@ -12,8 +12,7 @@
     position: absolute;
     display: flex;
     margin-top: -15px;
-    margin-right: -160px;
-    gap: 10px;
+    margin-right: -190px;
 }
 
 .linkItem {
@@ -22,6 +21,7 @@
 
 .webItem {
     font-size: 22px;
+    margin-left: -30px;
 }
 
 .gitItem {
@@ -41,7 +41,7 @@
     border-top: 1px solid pink;
     border-bottom: 1px solid pink;
     width: 200px;
-    height: 125px;
+    height: 127px;
     padding: 0;
 }
 

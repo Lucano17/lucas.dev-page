@@ -49,10 +49,20 @@ const techIcons: Record<string, JSX.Element> = {
 export const ProjectCard = ({ project }: Props) => {
   return (
     <div className={styles.container}>
-        <div className={styles.linksContainer}>
-        <Link href={`${project?.webLink}`} target="_blank"><FaExternalLinkAlt className={`${styles.linkItem} ${styles.webItem}`}/></Link>
-        <Link href={`${project?.gitHubLink}`} target="_blank"><IoLogoGithub className={`${styles.linkItem} ${styles.gitItem}`}/></Link>
-        </div>
+      <div className={styles.linksContainer}>
+
+        {project?.webLink && (
+          <Link href={`${project?.webLink}`} target="_blank">
+            <FaExternalLinkAlt
+              className={`${styles.linkItem} ${styles.webItem}`}
+            />
+          </Link>
+        )}
+
+        <Link href={`${project?.gitHubLink}`} target="_blank">
+          <IoLogoGithub className={`${styles.linkItem} ${styles.gitItem}`} />
+        </Link>
+      </div>
       <h3>{project?.title}</h3>
 
       {/* Renderizar imágenes */}
