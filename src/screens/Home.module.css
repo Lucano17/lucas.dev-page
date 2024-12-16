@@ -22,6 +22,11 @@
     width: 300px;
 }
 
+.profileImage {
+    border-radius: 50%; /* Esto hará la imagen redonda */
+    overflow: hidden; /* Esto asegura que la imagen se recorte de manera adecuada */
+  }
+
 .socialWebs {
     color: rgb(255, 0, 170);
     display: flex;
