@@ -15,7 +15,10 @@ export const projects: ProjectsData = {
             "webLink": "",
             "images": [],
             "description": "Mi propia página web, hecha con TypeScript y Next, donde expongo mis conocimientos, proyectos y habilidades",
-            "techsUsed": []
+            "techsUsed": [
+                { name: "TypeScript" },
+                { name: "React.js" },
+                { name: "Next.js" }]
         },
         {
             "id": 2,
@@ -24,26 +27,40 @@ export const projects: ProjectsData = {
             "webLink": "https://ecommerce-template-1.vercel.app/",
             "images": [],
             "description": "Este es un ecommerce de prueba hecho con Next y PosgreSQL, donde probé todas mis habilidades en conjunto para crear una tienda completamente funcional con base de datos y transacciones.",
-            "techsUsed": []
-          },
-          {
+            "techsUsed": [
+                { name: "TypeScript" },
+                { name: "React.js" },
+                { name: "Next.js" },
+                { name: "PosgreSQL" },
+                { name: "Prisma" },
+                { name: "Docker" }
+            ]
+        },
+        {
             "id": 3,
             "title": "mern-crud-auth",
             "gitHubLink": "mern-crud-auth",
             "webLink": "",
             "images": [],
             "description": "Una TO-DO app hecha con react y express, donde puedes crear una lista de lo que necesites! Desde productos para comprar, actividades a realizar, personas, objetivos y más!",
-            "techsUsed": []
-          },
-          {
+            "techsUsed": [
+                { name: "JavaScript" },
+                { name: "React.js" },
+                { name: "Node.js" },
+            ]
+        },
+        {
             "id": 4,
             "title": "my-landing-page",
             "gitHubLink": "https://github.com/Lucano17/my-landing-page",
             "webLink": "https://earnest-croissant-d12ab3.netlify.app/",
             "images": [],
             "description": "Mi primera web hecha con React",
-            "techsUsed": []
-          }
+            "techsUsed": [
+                { name: "JavaScript" },
+                { name: "React.js" },
+            ]
+        }
 
     ]
 }
