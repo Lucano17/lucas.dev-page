@@ -67,10 +67,9 @@ export const ProjectCard = ({ project }: Props) => {
       </div>
       <h3>{project?.title}</h3>
 
-      {/* Renderizar imágenes */}
       <div className={styles.imagesContainer}>
         {project?.images && project.images.length > 0 ? (
-          project.images.map((image, index) => (
+          project.images.map((image) => (
             <Image
               key={project.title}
               src={`/projects/${image}`}
