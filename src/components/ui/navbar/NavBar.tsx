@@ -77,7 +77,7 @@ export const NavBar = () => {
       >
         {!navBarOpen && (
           <p className={styles.logo}>
-            <span>Lucas.dev | </span>
+            <span>Lucano.dev | </span>
             Web development
           </p>
         )}
