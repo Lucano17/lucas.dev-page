@@ -33,9 +33,9 @@
 
 
 .navOnScroll {
-    position: fixed; /* Asegura que tenga z-index cuando el NavBar esté fijo */
+    position: fixed;
     z-index: 1000;
-    background-color: #2b283a;
+    background-color: #160017;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -66,6 +66,19 @@
 
 .navLink:hover{
     cursor: pointer
+}
+
+.logo span {
+    margin-right: 10px;
+    color: rgb(239, 61, 255);
+}
+
+.activeSection {
+    color: rgb(252, 103, 195);
+}
+
+.linksContainer {
+    list-style-type: none;
 }
 
 @media (min-width: 1070px){
@@ -113,28 +126,4 @@
     cursor: pointer;
     margin-top: 10px;
     }
-}
-
-.navOnScroll {
-    position: fixed;
-    background-color: #2b283a;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 60px;
-    width: 100%;
-    transition: 1s;
-}
-
-.logo span {
-    margin-right: 10px;
-    color: rgb(239, 61, 255);
-}
-
-.activeSection {
-    color: rgb(252, 103, 195);
-}
-
-.linksContainer {
-    list-style-type: none;
 }
