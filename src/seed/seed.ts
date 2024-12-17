@@ -58,10 +58,10 @@ export const projects: ProjectsData = {
         },
         {
             "id": 4,
-            "title": "my-landing-page",
+            "title": "react-spa-template",
             "gitHubLink": "https://github.com/Lucano17/my-landing-page",
             "webLink": "https://earnest-croissant-d12ab3.netlify.app/",
-            "images": ["landing-page.image1.png"],
+            "images": ["react-spa-template.image1.png"],
             "description": "Mi primera web hecha con React",
             "techsUsed": [
                 { name: "HTML"},

@@ -25,7 +25,7 @@ export const NavBar = () => {
         });
       }
     }
-  
+
     setActiveSection(sectionName);
     setNavBarOpen(false);
   };
@@ -55,10 +55,10 @@ export const NavBar = () => {
   }, []);
 
   const links = [
-    { id: 1, link: "Home" },
-    { id: 2, link: "Projects" },
-    // { id: 3, link: "HowWeWork" },
-    { id: 4, link: "Contact" },
+    { id: 1, link: "Home", navName: "Inicio" },
+    { id: 2, link: "Projects", navName: "Proyectos"  },
+    // { id: 3, link: "HowWeWork", navName: ""  },
+    { id: 4, link: "Contact", navName: "Contacto"  },
   ];
 
   const scrollPosition = useScrollPosition();
@@ -77,7 +77,7 @@ export const NavBar = () => {
       >
         {!navBarOpen && (
           <p className={styles.logo}>
-            <span>Lucano.dev | </span>
+            <span>Lucas.dev | </span>
             Web development
           </p>
         )}
@@ -109,11 +109,7 @@ export const NavBar = () => {
                       activeSection === x.link ? styles.activeSection : ""
                     }`}
                   >
-                    {x.link === "HowWeWork"
-                      ? "How We Work"
-                      : x.link && x.link === "Projects"
-                      ? "Proyectos"
-                      : x.link}
+                    {x.navName}
                   </button>
                   <div className={styles.border}></div>
                 </div>
@@ -133,11 +129,7 @@ export const NavBar = () => {
                     activeSection === x.link ? styles.activeSection : ""
                   }`}
                 >
-                  {x.link === "HowWeWork"
-                    ? "How We Work"
-                    : x.link && x.link === "Projects"
-                    ? "Proyectos"
-                    : x.link}
+                  {x.navName}
                 </button>
                 <div className={styles.border}></div>
               </div>
