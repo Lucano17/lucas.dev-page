@@ -42,8 +42,8 @@ export const projects: ProjectsData = {
         },
         {
             "id": 3,
-            "title": "mern-crud-auth",
-            "gitHubLink": "https://github.com/Lucano17/mern-crud-auth",
+            "title": "task-manager",
+            "gitHubLink": "https://github.com/Lucano17/task-manager",
             "webLink": "",
             "images": ["task-manager.image1.png"],
             "description": "Una TO-DO app hecha con react y express, donde puedes crear una lista de lo que necesites! Desde productos para comprar, actividades a realizar, personas, objetivos y más!",

@@ -77,7 +77,7 @@ export const NavBar = () => {
       >
         {!navBarOpen && (
           <p className={styles.logo}>
-            <span>Lucas.dev | </span>
+            <button onClick={()=>{handleSectionClick("Home")}}>Lucas.dev | </button>
             Web development
           </p>
         )}
