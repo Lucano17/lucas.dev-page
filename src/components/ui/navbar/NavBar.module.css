@@ -11,6 +11,8 @@
     
 }
 
+
+
 .navOpen {
     display: flex;
     height: 100%;
@@ -43,48 +45,71 @@
     height: 60px;
     width: 100%;
     transition: 1s;
-    border-bottom: 1px solid pink;
+    border-bottom: 1px solid rgb(81, 64, 64);
   }
 
-@keyframes borderAnimation {
-    0% {
-        height: 0px;
+  
+  .logo {
+      display: flex;
+      color: white;
+      font-weight: 600;
+      font-size: 22px;
+      align-items: center;
     }
-    100% {
-        height: 1px;
+    
+    .logo button {
+        margin-right: 10px;
+        border: none;
+        font-weight: 600;
+        font-size: 23px;
+        cursor: pointer;
+        background: linear-gradient(90deg, #FF1493, #FF1493, rgb(246, 87, 159), #FF1493, #FF1493);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s linear infinite;
     }
-}
+    
+    
+    
+    .closeIcon {
+        font-size: 2em;
+        margin-top: 30px;
+    }
+    
+    .navLink:hover{
+        cursor: pointer
+    }
+    
+    .activeSection {
+        color: rgb(255, 0, 170);
+    }
+    
+    .linksContainer {
+        list-style-type: none;
+    }
+    
+    @keyframes borderAnimation {
+        0% {
+            height: 0px;
+        }
+        100% {
+            height: 1px;
+        }
+    }
+    
+    @keyframes shine {
+        0% {
+          background-position: -200%;
+        }
+        100% {
+          background-position: 200%;
+        }
+      }
 
-.logo {
-    display: flex;
-    color: white;
-    font-weight: 600;
-}
-
-.closeIcon {
-    font-size: 2em;
-    margin-top: 30px;
-}
-
-.navLink:hover{
-    cursor: pointer
-}
-
-.logo span {
-    margin-right: 10px;
-    color: rgb(255, 0, 170);
-}
-
-.activeSection {
-    color: rgb(255, 0, 170);
-}
-
-.linksContainer {
-    list-style-type: none;
-}
-
-@media (min-width: 1070px){
-    .logo {
+    @media (min-width: 1070px){
+        .logo {
         font-size: 1.5em;
     }
     .navBar {
