@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 import { TechnologiesCard } from "@/components/technologies/TechnologiesCard";
 import { IoLogoGithub } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
+import { TbFileCv } from "react-icons/tb";
 import Image from "next/image";
 import Link from "next/link";
 import { Techs } from "@/interfaces/projects.interface";
@@ -72,6 +73,8 @@ export const HomePage = () => {
             >
               <BiLogoGmail />
             </Link>
+            <a href="pdf/cv.pdf" download="CV - Lucas.dev - Esp.pdf"><TbFileCv/></a>
+
           </div>
         </aside>
       </div>
