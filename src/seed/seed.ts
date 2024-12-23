@@ -42,9 +42,9 @@ export const projects: ProjectsData = {
         },
         {
             "id": 3,
-            "title": "task-manager",
+            "title": "tasks-manager",
             "gitHubLink": "https://github.com/Lucano17/task-manager",
-            "webLink": "",
+            "webLink": "https://task-manager-sigma-two-21.vercel.app/",
             "images": ["task-manager.image1.png"],
             "description": "Una TO-DO app hecha con react y express, donde puedes crear una lista de lo que necesites! Desde productos para comprar, actividades a realizar, personas, objetivos y más!",
             "techsUsed": [
