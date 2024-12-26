@@ -73,7 +73,7 @@ export const HomePage = () => {
             >
               <BiLogoGmail />
             </Link>
-            <a href="pdf/cv.pdf" download="CV - Lucas.dev - Esp.pdf"><TbFileCv/></a>
+            <a href="pdf/cv-esp.pdf" download="CV - Lucas.dev - Esp.pdf"><TbFileCv/></a>
 
           </div>
         </aside>
