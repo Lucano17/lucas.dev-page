@@ -17,7 +17,6 @@ const principalTechs: Techs[] = [
   { name: "React.js" },
   { name: "Next.js" },
   { name: "Node.js" },
-  { name: "Express.js" },
   { name: "PosgreSQL" },
  
 ];
@@ -26,6 +25,7 @@ const secondaryTitle = "Tecnologías ocasionales";
 const secondaryTechs: Techs[] = [
   { name: "React Native" },
   { name: "Angular" },
+  { name: "Express.js" },
   { name: "MySQL" },
   { name: "MongoDB" },
   { name: "Prisma" },
