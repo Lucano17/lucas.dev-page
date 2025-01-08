@@ -20,6 +20,7 @@ import {
   SiDocker,
   SiPrisma,
   SiMongodb,
+  SiExpress,
 } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,6 +38,7 @@ export const techIcons: Record<string, JSX.Element> = {
   "React.js": <SiReact />,
   "Next.js": <SiNextdotjs />,
   "Node.js": <SiNodedotjs />,
+  "Express.js": <SiExpress />,
   PosgreSQL: <SiPostgresql />,
   MySQL: <SiMysql />,
   "React Native": <SiReactrouter />,

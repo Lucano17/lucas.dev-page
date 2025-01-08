@@ -53,7 +53,8 @@ export const projects: ProjectsData = {
                 { name: "JavaScript" },
                 { name: "React.js" },
                 { name: "Node.js" },
-                { name: "MongoDB"}
+                { name: "MongoDB"},
+                { name: "Express.js"}
             ]
         },
         {

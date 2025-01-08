@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Home.module.css";
 import { TechnologiesCard } from "@/components/technologies/TechnologiesCard";
-import { IoLogoGithub } from "react-icons/io5";
+import { IoLogoGithub, IoLogoLinkedin  } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import { TbFileCv } from "react-icons/tb";
 import Image from "next/image";
@@ -17,17 +17,21 @@ const principalTechs: Techs[] = [
   { name: "React.js" },
   { name: "Next.js" },
   { name: "Node.js" },
+  { name: "Express.js" },
   { name: "PosgreSQL" },
-  { name: "MongoDB" },
+ 
 ];
 
 const secondaryTitle = "Tecnologías ocasionales";
 const secondaryTechs: Techs[] = [
   { name: "React Native" },
   { name: "Angular" },
+  { name: "MySQL" },
+  { name: "MongoDB" },
+  { name: "Prisma" },
+  { name: "Docker" },
   { name: "Tailwind" },
   { name: "Bootstrap" },
-  { name: "MySQL" },
 ];
 
 export const HomePage = () => {
@@ -73,8 +77,14 @@ export const HomePage = () => {
             >
               <BiLogoGmail />
             </Link>
+              <Link
+              href="https://www.linkedin.com/in/lucas-de-la-fuente-040b01188/"
+              target="_blank"
+            >
+              <IoLogoLinkedin />
+            </Link>
             <a href="pdf/cv-esp.pdf" download="CV - Lucas.dev - Esp.pdf"><TbFileCv/></a>
-
+            
           </div>
         </aside>
       </div>

@@ -9,6 +9,7 @@ export type ValidTechs =
     | "React.js" 
     | "Next.js" 
     | "Node.js" 
+    | "Express.js"
     | "PosgreSQL" 
     | "MySQL" 
     | "MongoDB"
