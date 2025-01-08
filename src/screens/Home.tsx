@@ -26,6 +26,7 @@ const secondaryTechs: Techs[] = [
   { name: "React Native" },
   { name: "Angular" },
   { name: "Express.js" },
+  { name: "Redux"},
   { name: "MySQL" },
   { name: "MongoDB" },
   { name: "Prisma" },

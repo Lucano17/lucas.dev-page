@@ -21,6 +21,7 @@ import {
   SiPrisma,
   SiMongodb,
   SiExpress,
+  SiRedux,
 } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
@@ -47,7 +48,8 @@ export const techIcons: Record<string, JSX.Element> = {
   Bootstrap: <SiBootstrap />,
   Docker: <SiDocker />,
   Prisma: <SiPrisma />,
-  MongoDB: <SiMongodb/>
+  MongoDB: <SiMongodb />,
+  Redux: <SiRedux />,
 };
 
 export const ProjectCard = ({ project }: Props) => {

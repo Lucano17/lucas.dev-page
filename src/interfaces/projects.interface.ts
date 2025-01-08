@@ -18,7 +18,9 @@ export type ValidTechs =
     | "Tailwind" 
     | "Bootstrap" 
     | "Docker" 
-    | "Prisma";
+    | "Prisma"
+    | "Redux"
+    | "Zustand"
 
 export interface Techs {
     name?: ValidTechs,
