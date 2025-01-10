@@ -11,29 +11,58 @@ export const NavBar = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
   // activeSection
   const [activeSection, setActiveSection] = useState("Home");
+  const scrollPosition = useScrollPosition();
+  
+  const links = [
+    { id: 1, link: "Home", navName: "Inicio" },
+    { id: 2, link: "Projects", navName: "Proyectos"  },
+    // { id: 3, link: "HowWeWork", navName: ""  },
+    { id: 4, link: "Contact", navName: "Contacto"  },
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      links.forEach(({ link }) => {
+        const section = document.getElementById(link);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          const sectionTop = rect.top + window.scrollY;
+          const sectionHeight = section.offsetHeight;
+
+          if (
+            scrollPosition >= sectionTop - 100 &&
+            scrollPosition < sectionTop + sectionHeight - 100
+          ) {
+            setActiveSection(link);
+          }
+        }
+      });
+    };
+
+    handleScroll();
+  }, [scrollPosition, links]);
 
   const handleSectionClick = (sectionName: string) => {
-    if (sectionName === "Home") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      const section = document.getElementById(sectionName);
-      if (section) {
-        section.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      }
+  if (sectionName === "Home") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    const section = document.getElementById(sectionName);
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      const offset = window.scrollY + rect.top - 0; // Ajusta el valor (60) según la altura del NavBar.
+      window.scrollTo({ top: offset, behavior: "smooth" });
     }
+  }
 
-    setActiveSection(sectionName);
-    setNavBarOpen(false);
-  };
+  setActiveSection(sectionName);
+  setNavBarOpen(false);
+};
 
   const [windowDimention, setWindowDimention] = useState({
     width: 0,
     height: 0,
   });
+
 
   useEffect(() => {
     setWindowDimention({
@@ -54,14 +83,7 @@ export const NavBar = () => {
     };
   }, []);
 
-  const links = [
-    { id: 1, link: "Home", navName: "Inicio" },
-    { id: 2, link: "Projects", navName: "Proyectos"  },
-    // { id: 3, link: "HowWeWork", navName: ""  },
-    { id: 4, link: "Contact", navName: "Contacto"  },
-  ];
 
-  const scrollPosition = useScrollPosition();
 
   return (
     <>

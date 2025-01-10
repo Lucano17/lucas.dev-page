@@ -1,14 +1,14 @@
 .navBar {
+    position: absolute;
     padding-top: 15px;
     display: flex;
     height: 50px;
     width: 100%;
-    position: absolute;
     justify-content: space-around;
     align-items: center;
+    align-content: center;
     transition: 1s;
     z-index: 1000;
-    
 }
 
 
@@ -76,6 +76,7 @@
     .closeIcon {
         font-size: 2em;
         margin-top: 30px;
+        cursor: pointer;
     }
     
     .navLink:hover{
@@ -128,7 +129,7 @@
     .navLink {
         position: relative;
         font-weight: 400;
-        padding-top: 10px;
+        padding-top: 0px;
         font-size: 1.3em;
         transition: 0.5s;
     }
