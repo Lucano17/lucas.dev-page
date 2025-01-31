@@ -23,6 +23,7 @@ import {
   SiExpress,
   SiRedux,
 } from "react-icons/si";
+import { TbSquareLetterZ } from "react-icons/tb";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,7 +41,7 @@ export const techIcons: Record<string, JSX.Element> = {
   "Next.js": <SiNextdotjs />,
   "Node.js": <SiNodedotjs />,
   "Express.js": <SiExpress />,
-  PosgreSQL: <SiPostgresql />,
+  PostgreSQL: <SiPostgresql />,
   MySQL: <SiMysql />,
   "React Native": <SiReactrouter />,
   Angular: <SiAngular />,
@@ -50,6 +51,7 @@ export const techIcons: Record<string, JSX.Element> = {
   Prisma: <SiPrisma />,
   MongoDB: <SiMongodb />,
   Redux: <SiRedux />,
+  Zustand: <TbSquareLetterZ />
 };
 
 export const ProjectCard = ({ project }: Props) => {

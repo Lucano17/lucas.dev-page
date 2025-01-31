@@ -17,7 +17,8 @@ const principalTechs: Techs[] = [
   { name: "React.js" },
   { name: "Next.js" },
   { name: "Node.js" },
-  { name: "PosgreSQL" },
+  { name: "Zustand"},
+  { name: "PostgreSQL" },
  
 ];
 

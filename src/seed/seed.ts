@@ -35,7 +35,8 @@ export const projects: ProjectsData = {
                 { name: "TypeScript" },
                 { name: "React.js" },
                 { name: "Next.js" },
-                { name: "PosgreSQL" },
+                { name: "Zustand" },
+                { name: "PostgreSQL" },
                 { name: "Prisma" },
                 { name: "Docker" }
             ]
@@ -59,6 +60,23 @@ export const projects: ProjectsData = {
         },
         {
             "id": 4,
+            "title": "poke-api",
+            "gitHubLink": "https://github.com/Lucano17/poke-api",
+            "webLink": "https://poke-api-vert-one.vercel.app",
+            "images": ["poke-api.image1.png"],
+            "description": "No solo una simple PokeApi, toda la PokeInfo que buscas!",
+            "techsUsed": [
+                { name: "HTML"},
+                { name: "CSS"},
+                { name: "TypeScript" },
+                { name: "React.js" },
+                { name: "Next.js" },
+                { name: "Zustand" },
+                { name: "Redux" },
+            ]
+        },
+        {
+            "id": 5,
             "title": "react-spa-template",
             "gitHubLink": "https://github.com/Lucano17/my-landing-page",
             "webLink": "https://earnest-croissant-d12ab3.netlify.app/",
@@ -70,7 +88,7 @@ export const projects: ProjectsData = {
                 { name: "JavaScript" },
                 { name: "React.js" },
             ]
-        }
+        },
 
     ]
 }
