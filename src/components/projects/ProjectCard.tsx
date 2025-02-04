@@ -13,7 +13,6 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiMysql,
-  SiReactrouter,
   SiAngular,
   SiTailwindcss,
   SiBootstrap,
@@ -23,7 +22,7 @@ import {
   SiExpress,
   SiRedux,
 } from "react-icons/si";
-import { TbSquareLetterZ } from "react-icons/tb";
+import { TbSquareLetterZ, TbBrandReactNative } from "react-icons/tb";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -43,7 +42,7 @@ export const techIcons: Record<string, JSX.Element> = {
   "Express.js": <SiExpress />,
   PostgreSQL: <SiPostgresql />,
   MySQL: <SiMysql />,
-  "React Native": <SiReactrouter />,
+  "React Native": <TbBrandReactNative />,
   Angular: <SiAngular />,
   TailwindCSS: <SiTailwindcss />,
   Bootstrap: <SiBootstrap />,
@@ -51,14 +50,13 @@ export const techIcons: Record<string, JSX.Element> = {
   Prisma: <SiPrisma />,
   MongoDB: <SiMongodb />,
   Redux: <SiRedux />,
-  Zustand: <TbSquareLetterZ />
+  Zustand: <TbSquareLetterZ />,
 };
 
 export const ProjectCard = ({ project }: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.linksContainer}>
-
         {project?.webLink && (
           <Link href={`${project?.webLink}`} target="_blank">
             <FaExternalLinkAlt
