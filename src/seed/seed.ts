@@ -67,7 +67,7 @@ export const projects: ProjectsData = {
             "description": "No solo una simple PokeApi, toda la PokeInfo que buscas!",
             "techsUsed": [
                 { name: "HTML"},
-                { name: "CSS"},
+                { name: "TailwindCSS"},
                 { name: "TypeScript" },
                 { name: "React.js" },
                 { name: "Next.js" },
@@ -77,11 +77,25 @@ export const projects: ProjectsData = {
         },
         {
             "id": 5,
+            "title": "react-native-games-library",
+            "gitHubLink": "https://github.com/Lucano17/react-native-games-library",
+            "webLink": "",
+            "images": ["react-native-games-library.image1.jpeg"],
+            "description": "Aplicación hecha con React Native y Expo, además de NativeWind (TailwindCSS). Esta app hace una llamada a la API de Giant Bomb API, y recupera una lista de juegos y varios datos relacionados con los mismos",
+            "techsUsed": [
+                { name: "React Native"},
+                { name: "JavaScript" },
+                { name: "React.js" },
+                { name: "TailwindCSS"},
+            ]
+        },
+        {
+            "id": 6,
             "title": "react-spa-template",
             "gitHubLink": "https://github.com/Lucano17/my-landing-page",
             "webLink": "https://earnest-croissant-d12ab3.netlify.app/",
             "images": ["react-spa-template.image1.png"],
-            "description": "Mi primera web hecha con React",
+            "description": "Mi primera app hecha con React",
             "techsUsed": [
                 { name: "HTML"},
                 { name: "CSS"},

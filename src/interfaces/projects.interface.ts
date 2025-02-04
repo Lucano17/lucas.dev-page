@@ -15,7 +15,7 @@ export type ValidTechs =
     | "MongoDB"
     | "React Native" 
     | "Angular" 
-    | "Tailwind" 
+    | "TailwindCSS" 
     | "Bootstrap" 
     | "Docker" 
     | "Prisma"

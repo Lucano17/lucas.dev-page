@@ -45,7 +45,7 @@ export const techIcons: Record<string, JSX.Element> = {
   MySQL: <SiMysql />,
   "React Native": <SiReactrouter />,
   Angular: <SiAngular />,
-  Tailwind: <SiTailwindcss />,
+  TailwindCSS: <SiTailwindcss />,
   Bootstrap: <SiBootstrap />,
   Docker: <SiDocker />,
   Prisma: <SiPrisma />,

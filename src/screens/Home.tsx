@@ -32,7 +32,7 @@ const secondaryTechs: Techs[] = [
   { name: "MongoDB" },
   { name: "Prisma" },
   { name: "Docker" },
-  { name: "Tailwind" },
+  { name: "TailwindCSS" },
   { name: "Bootstrap" },
 ];
 
