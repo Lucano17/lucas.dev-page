@@ -29,6 +29,10 @@
   gap: 10px;
 }
 
+.techIcons {
+  color: rgb(234, 134, 204);
+}
+
 .linksContainer {
   display: flex;
   flex-direction: column;

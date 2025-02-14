@@ -16,11 +16,14 @@ export const projects: ProjectsData = {
             "images": ["lucas.dev-page.image1.png"],
             "description": "Mi propia página web, hecha con TypeScript y Next, donde expongo mis conocimientos, proyectos y habilidades",
             "techsUsed": [
-                { name: "HTML"},
-                { name: "CSS"},
+                { name: "HTML" },
+                { name: "CSS" },
                 { name: "TypeScript" },
                 { name: "React.js" },
-                { name: "Next.js" }]
+                { name: "Next.js" }],
+            "features": [
+                "Desarrollo web", "Gestor de estado", "Enrutado"
+            ],
         },
         {
             "id": 2,
@@ -30,8 +33,8 @@ export const projects: ProjectsData = {
             "images": ["ecommerce-template.image1.png"],
             "description": "Este es un ecommerce de prueba hecho con Next y PosgreSQL, donde probé todas mis habilidades en conjunto para crear una tienda completamente funcional con base de datos y transacciones.",
             "techsUsed": [
-                { name: "HTML"},
-                { name: "CSS"},
+                { name: "HTML" },
+                { name: "CSS" },
                 { name: "TypeScript" },
                 { name: "React.js" },
                 { name: "Next.js" },
@@ -39,7 +42,16 @@ export const projects: ProjectsData = {
                 { name: "PostgreSQL" },
                 { name: "Prisma" },
                 { name: "Docker" }
-            ]
+            ],
+            "features": [
+                "Desarrollo web", 
+                "Autenticación de usuario", 
+                "Base de datos SQL", 
+                "Gestor de estado", 
+                "Roles de usuario", 
+                "Transacciones de pago",
+                "Enrutado",
+            ],
         },
         {
             "id": 3,
@@ -49,13 +61,19 @@ export const projects: ProjectsData = {
             "images": ["task-manager.image1.png"],
             "description": "Una TO-DO app hecha con react y express, donde puedes crear una lista de lo que necesites! Desde productos para comprar, actividades a realizar, personas, objetivos y más!",
             "techsUsed": [
-                { name: "HTML"},
-                { name: "CSS"},
+                { name: "HTML" },
+                { name: "CSS" },
                 { name: "JavaScript" },
                 { name: "React.js" },
                 { name: "Node.js" },
-                { name: "MongoDB"},
-                { name: "Express.js"}
+                { name: "MongoDB" },
+                { name: "Express.js" }
+            ],
+            "features": [
+                "Desarrollo web",
+                "Autenticación de usuario",
+                "Base de datos NoSQL",
+                "Enrutado",
             ]
         },
         {
@@ -66,14 +84,19 @@ export const projects: ProjectsData = {
             "images": ["poke-api.image1.png"],
             "description": "No solo una simple PokeApi, toda la PokeInfo que buscas!",
             "techsUsed": [
-                { name: "HTML"},
-                { name: "TailwindCSS"},
+                { name: "HTML" },
+                { name: "TailwindCSS" },
                 { name: "TypeScript" },
                 { name: "React.js" },
                 { name: "Next.js" },
                 { name: "Zustand" },
                 { name: "Redux" },
-            ]
+            ],
+            "features": [
+                "Desarrollo web",
+                "Gestor de estado",
+                "Enrutado",
+            ],
         },
         {
             "id": 5,
@@ -83,11 +106,15 @@ export const projects: ProjectsData = {
             "images": ["react-native-games-library.image1.jpeg"],
             "description": "Aplicación hecha con React Native y Expo, además de NativeWind (TailwindCSS). Esta app hace una llamada a la API de Giant Bomb API, y recupera una lista de juegos y varios datos relacionados con los mismos",
             "techsUsed": [
-                { name: "React Native"},
+                { name: "React Native" },
                 { name: "JavaScript" },
                 { name: "React.js" },
-                { name: "TailwindCSS"},
-            ]
+                { name: "TailwindCSS" },
+            ],
+            "features": [
+                "Aplicación móvil",
+                "Enrutado",
+            ],
         },
         {
             "id": 6,
@@ -97,10 +124,13 @@ export const projects: ProjectsData = {
             "images": ["react-spa-template.image1.png"],
             "description": "Mi primera app hecha con React",
             "techsUsed": [
-                { name: "HTML"},
-                { name: "CSS"},
+                { name: "HTML" },
+                { name: "CSS" },
                 { name: "JavaScript" },
                 { name: "React.js" },
+            ],
+            "features": [
+                "Desarrollo web"
             ]
         },
 

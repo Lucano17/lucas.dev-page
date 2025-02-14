@@ -66,7 +66,7 @@ export default async function ProjectPage({ params }: Props) {
                   key={`${tech.name}-${id}`}
                   className={styles.techsContainer}
                 >
-                  <p>{techIcons[tech.name || ""] || null}</p>
+                  <p className={styles.techIcons}>{techIcons[tech.name || ""] || null}</p>
                   <p>{tech.name}</p>
                 </div>
               ))}

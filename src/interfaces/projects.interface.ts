@@ -1,4 +1,14 @@
-
+export type ValidFeatures = 
+    | "Base de datos SQL"
+    | "Base de datos NoSQL"
+    | "Transacciones de pago"
+    | "Roles de usuario"
+    | "Autenticación de usuario"
+    | "Desarrollo web"
+    | "Aplicación móvil"
+    | "Gestor de estado"
+    | "Enrutado"
+    
 
 
 export type ValidTechs = 
@@ -31,6 +41,7 @@ export interface Project {
     id?: number
     title?: string,
     techsUsed?: Techs[],
+    features?: ValidFeatures[],
     description?: string,
     images?: string[],
     gitHubLink?: string,
