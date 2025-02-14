@@ -67,14 +67,14 @@ export default async function ProjectPage({ params }: Props) {
                 target="_blank"
                 className={styles.link}
               >
-                Web {webLinkIcon}
+                Web <span>{webLinkIcon}</span>
               </Link>
               <Link
                 href={`${project.gitHubLink}`}
                 target="_blank"
                 className={styles.link}
               >
-                GitHub {gitHubIcon}
+                GitHub <span>{gitHubIcon}</span>
               </Link>
             </div>
           </div>

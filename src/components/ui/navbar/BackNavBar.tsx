@@ -6,18 +6,17 @@ import { useState, useEffect } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import { useScrollPosition } from "@/hooks/scrollPosition";
+import Link from "next/link";
 
-export const NavBar = () => {
+export const BackNavBar = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
   // activeSection
   const [activeSection, setActiveSection] = useState("Home");
   const scrollPosition = useScrollPosition();
   
-  const links = useMemo(() => [
-    { id: 1, link: "Home", navName: "Inicio" },
-    { id: 2, link: "Projects", navName: "Proyectos" },
-    { id: 4, link: "Contact", navName: "Contacto" },
-  ], []);
+ const links = useMemo(() => [
+     { id: 1, link: "Home", navName: "Inicio" },
+   ], []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -98,7 +97,7 @@ export const NavBar = () => {
       >
         {!navBarOpen && (
           <p className={styles.logo}>
-            <button onClick={()=>{handleSectionClick("Home")}}>Lucas.dev | </button>
+            <Link href={"/"}>Lucas.dev | </Link>
             Web development
           </p>
         )}
@@ -142,16 +141,14 @@ export const NavBar = () => {
           <ul className={styles.linksContainer}>
             {links.map((x) => (
               <div key={x.id}>
-                <button
-                  onClick={() => {
-                    handleSectionClick(x.link);
-                  }}
+                <Link
+                  href={"/"}
                   className={`${styles.navLink} ${
                     activeSection === x.link ? styles.activeSection : ""
                   }`}
                 >
                   {x.navName}
-                </button>
+                </Link>
                 <div className={styles.border}></div>
               </div>
             ))}

@@ -68,6 +68,10 @@
   padding: 5px;
 }
 
+.link span {
+  margin-left: 10px;
+}
+
 .description {
   display: flex;
   flex-direction: column;
