@@ -69,32 +69,34 @@ export const ProjectCard = ({ project }: Props) => {
           <IoLogoGithub className={`${styles.linkItem} ${styles.gitItem}`} />
         </Link>
       </div>
-      <h3>{project?.title}</h3>
+      <Link href={`/project/${project?.id}`}>
+        <h3>{project?.title}</h3>
 
-      <div className={styles.imagesContainer}>
-        {project?.images && project.images.length > 0 ? (
-          project.images.map((image) => (
-            <Image
-              key={project.title}
-              src={`/projects/${image}`}
-              alt={project?.title || "Imagen del proyecto"}
-              width={200}
-              height={125}
-            />
-          ))
-        ) : (
-          <p>No hay imágenes disponibles</p>
-        )}
-      </div>
-      <div className={styles.techsContainer}>
-        {project?.techsUsed && project.techsUsed.length > 0
-          ? project.techsUsed.map((tech, index) => (
-              <div key={index} className={styles.tech} title={tech.name}>
-                {techIcons[tech.name || ""] || null}
-              </div>
+        <div className={styles.imagesContainer}>
+          {project?.images && project.images.length > 0 ? (
+            project.images.map((image) => (
+              <Image
+                key={project.title}
+                src={`/projects/${image}`}
+                alt={project?.title || "Imagen del proyecto"}
+                width={200}
+                height={125}
+              />
             ))
-          : ""}
-      </div>
+          ) : (
+            <p>No hay imágenes disponibles</p>
+          )}
+        </div>
+        <div className={styles.techsContainer}>
+          {project?.techsUsed && project.techsUsed.length > 0
+            ? project.techsUsed.map((tech, index) => (
+                <div key={index} className={styles.tech} title={tech.name}>
+                  {techIcons[tech.name || ""] || null}
+                </div>
+              ))
+            : ""}
+        </div>
+      </Link>
     </div>
   );
 };
