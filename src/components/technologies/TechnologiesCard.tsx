@@ -1,6 +1,6 @@
 import React from 'react'
 import { Techs } from "@/interfaces/projects.interface";
-import { techIcons } from '../projects/ProjectCard';
+import { techIcons } from '@/components/ui/Icons';
 import styles from "./Technologies.module.css"
 
 interface Props {

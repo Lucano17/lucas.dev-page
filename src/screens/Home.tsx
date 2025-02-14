@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./Home.module.css";
 import { TechnologiesCard } from "@/components/technologies/TechnologiesCard";
-import { IoLogoGithub, IoLogoLinkedin  } from "react-icons/io5";
-import { BiLogoGmail } from "react-icons/bi";
-import { TbFileCv } from "react-icons/tb";
+// import { IoLogoGithub, IoLogoLinkedin  } from "react-icons/io5";
+// import { BiLogoGmail } from "react-icons/bi";
+// import { TbFileCv } from "react-icons/tb";
 import Image from "next/image";
 import Link from "next/link";
 import { Techs } from "@/interfaces/projects.interface";
+import { cvIcon, gitHubIcon, gmailIcon, linkedInIcon } from "@/components/ui/Icons";
 
 const principalTitle = "Tecnologías principales";
 const principalTechs: Techs[] = [
@@ -71,21 +72,21 @@ export const HomePage = () => {
 
           <div className={styles.socialWebs}>
             <Link href="https://github.com/Lucano17" target="_blank">
-              <IoLogoGithub />
+              {gitHubIcon}
             </Link>
             <Link
               href="/mailRedirect"
               target="_blank"
             >
-              <BiLogoGmail />
+              {gmailIcon}
             </Link>
               <Link
               href="https://www.linkedin.com/in/lucas-de-la-fuente-040b01188/"
               target="_blank"
             >
-              <IoLogoLinkedin />
+             {linkedInIcon}
             </Link>
-            <a href="pdf/cv-esp.pdf" download="CV - Lucas.dev - Esp.pdf"><TbFileCv/></a>
+            <a href="pdf/cv-esp.pdf" download="CV - Lucas.dev - Esp.pdf">{cvIcon}</a>
             
           </div>
         </aside>

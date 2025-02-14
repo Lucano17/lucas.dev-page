@@ -1,57 +1,14 @@
-import React, { JSX } from "react";
 import styles from "./ProjectCard.module.css";
 import { Project } from "@/interfaces/projects.interface";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import {
-  SiJavascript,
-  SiTypescript,
-  SiHtml5,
-  SiCss3,
-  SiReact,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiPostgresql,
-  SiMysql,
-  SiAngular,
-  SiTailwindcss,
-  SiBootstrap,
-  SiDocker,
-  SiPrisma,
-  SiMongodb,
-  SiExpress,
-  SiRedux,
-} from "react-icons/si";
-import { TbSquareLetterZ, TbBrandReactNative } from "react-icons/tb";
 import Image from "next/image";
 import Link from "next/link";
+import { techIcons } from "../ui/Icons";
 
 interface Props {
   project?: Project;
 }
-
-// Mapeo de nombres de tecnologías a íconos
-export const techIcons: Record<string, JSX.Element> = {
-  JavaScript: <SiJavascript />,
-  TypeScript: <SiTypescript />,
-  HTML: <SiHtml5 />,
-  CSS: <SiCss3 />,
-  "React.js": <SiReact />,
-  "Next.js": <SiNextdotjs />,
-  "Node.js": <SiNodedotjs />,
-  "Express.js": <SiExpress />,
-  PostgreSQL: <SiPostgresql />,
-  MySQL: <SiMysql />,
-  "React Native": <TbBrandReactNative />,
-  Angular: <SiAngular />,
-  TailwindCSS: <SiTailwindcss />,
-  Bootstrap: <SiBootstrap />,
-  Docker: <SiDocker />,
-  Prisma: <SiPrisma />,
-  MongoDB: <SiMongodb />,
-  Redux: <SiRedux />,
-  Zustand: <TbSquareLetterZ />,
-};
 
 export const ProjectCard = ({ project }: Props) => {
   return (
