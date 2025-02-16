@@ -1,20 +1,15 @@
 import { projects } from "@/seed/seed";
-import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { techIcons } from '@/components/ui/Icons';
+import { techIcons } from "@/components/ui/Icons";
 import { gitHubIcon, webLinkIcon } from "@/components/ui/Icons";
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
+type tParams = Promise<{ id: string }>;
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const id = Number(params.id);
+export async function generateMetadata({ params }: { params: tParams }) {
+  const id = Number((await params).id);
   const project = projects.projects.find((project) => project.id === id);
 
   if (!id) {
@@ -40,8 +35,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function ProjectPage({ params }: Props) {
-  const id = Number(params.id);
+export default async function ProjectPage({ params }: { params: tParams }) {
+  const id = Number((await params).id);
   const project = projects.projects.find((project) => project.id === id);
 
   if (!project) {
