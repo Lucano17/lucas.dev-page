@@ -12,6 +12,18 @@
   margin-top: 20px;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+}
+
 .data {
   display: flex;
   flex-direction: column;

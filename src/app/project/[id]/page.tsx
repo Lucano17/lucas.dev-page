@@ -46,7 +46,7 @@ export default async function ProjectPage({ params }: { params: tParams }) {
     <div className={styles.container}>
       <h1>Proyecto: {project?.title}</h1>
       <div className={styles.mainContent}>
-        <section>
+        <section className={styles.section}>
           <Image
             src={`/projects/${project.images}`}
             alt={`${project.title}` || "Imagen del proyecto"}
@@ -74,7 +74,7 @@ export default async function ProjectPage({ params }: { params: tParams }) {
             </div>
           </div>
         </section>
-        <aside>
+        <aside className={styles.aside}>
           <div className={styles.data}>
             <div>
               <h2>Tecnologías usadas:</h2>

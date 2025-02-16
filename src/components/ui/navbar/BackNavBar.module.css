@@ -1,0 +1,157 @@
+.navBar {
+    position: absolute;
+    padding-top: 15px;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    transition: 1s;
+    z-index: 1000;
+}
+
+
+
+.navOpen {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(2, 0, 3), rgb(4, 0, 5));
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navLink {
+    display: flex;
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+    padding-top: 40px;
+    border: none;
+    background-color: transparent;
+}
+
+
+.navOnScroll {
+    position: fixed;
+    z-index: 1000;
+    background-color: #160017;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    transition: 1s;
+    border-bottom: 1px solid rgb(81, 64, 64);
+  }
+
+  
+  .logo {
+      display: flex;
+      color: white;
+      font-weight: 600;
+      font-size: 22px;
+      align-items: center;
+    }
+    
+    .titleButton {
+        margin-right: 10px;
+        border: none;
+        font-weight: 600;
+        font-size: 23px;
+        cursor: pointer;
+        background: linear-gradient(90deg, #FF1493, #FF1493, rgb(246, 87, 159), #FF1493, #FF1493);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s linear infinite;
+    }
+    
+    
+    
+    .closeIcon {
+        font-size: 2em;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    
+    .navLink:hover{
+        cursor: pointer
+    }
+    
+    .activeSection {
+        color: rgb(255, 0, 170);
+    }
+    
+    .linksContainer {
+        list-style-type: none;
+    }
+    
+    @keyframes borderAnimation {
+        0% {
+            height: 0px;
+        }
+        100% {
+            height: 1px;
+        }
+    }
+    
+    @keyframes shine {
+        0% {
+          background-position: -200%;
+        }
+        100% {
+          background-position: 200%;
+        }
+      }
+
+    @media (min-width: 1070px){
+        .logo {
+        font-size: 1.5em;
+    }
+    .navBar {
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50px;
+    }
+    .linksContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 50%;
+        align-items: center;
+    }
+    .navLink {
+        position: relative;
+        font-weight: 400;
+        padding-top: 0px;
+        font-size: 1.3em;
+        transition: 0.5s;
+    }
+    .navLink:hover {
+        font-size: 1.5em;
+    }
+    .navOnScroll {
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50px;
+    }
+    .contactLink {
+    display: flex;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: white;
+    background: none;
+    border: 3px solid rgb(239, 61, 255);
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    }
+}

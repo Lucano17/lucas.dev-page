@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo } from "react";
-import styles from "./NavBar.module.css";
+import styles from "./BackNavBar.module.css";
 import { useState, useEffect } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
@@ -97,7 +97,7 @@ export const BackNavBar = () => {
       >
         {!navBarOpen && (
           <p className={styles.logo}>
-            <Link href={"/"}>Lucas.dev | </Link>
+            <Link href={"/"}> <span className={styles.titleButton}> Lucas.dev | </span></Link>
             Web development
           </p>
         )}
