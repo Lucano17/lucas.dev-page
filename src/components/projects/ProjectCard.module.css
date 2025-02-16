@@ -29,8 +29,9 @@
     font-size: 25px;
 }
 
-.container h3 {
+.projectTitle {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 40px;
     font-size: 14px;
@@ -50,7 +51,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 5px;
-    gap: 10px;
+    padding: 5px;
 }
 
 .tech {
