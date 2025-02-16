@@ -119,4 +119,11 @@
   .techGrid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .projectLinks {
+    margin: auto;
+    margin-top: 15px;
+  }
+  .featuresContainer {
+    margin-top: 20px;
+  }
 }

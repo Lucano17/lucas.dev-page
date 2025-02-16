@@ -92,7 +92,7 @@ export default async function ProjectPage({ params }: { params: tParams }) {
                 ))}
               </div>
             </div>
-            <div>
+            <div className={styles.featuresContainer}>
               <h2>Otras características:</h2>
               <div>
                 <ul className={styles.featureGrid}>

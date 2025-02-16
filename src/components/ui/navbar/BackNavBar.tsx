@@ -123,14 +123,14 @@ export const BackNavBar = () => {
               {links.map((x) => (
                 //key id activeSection
                 <div key={x.id}>
-                  <button
-                    onClick={() => handleSectionClick(x.link)}
-                    className={`${styles.navLink} ${
-                      activeSection === x.link ? styles.activeSection : ""
-                    }`}
-                  >
-                    {x.navName}
-                  </button>
+                  <Link
+                  href={"/"}
+                  className={`${styles.navLink} ${
+                    activeSection === x.link ? styles.activeSection : ""
+                  }`}
+                >
+                  {x.navName}
+                </Link>
                   <div className={styles.border}></div>
                 </div>
               ))}
