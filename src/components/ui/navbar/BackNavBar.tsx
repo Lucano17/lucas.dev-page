@@ -40,22 +40,6 @@ export const BackNavBar = () => {
     handleScroll();
   }, [scrollPosition, links]);
 
-  const handleSectionClick = (sectionName: string) => {
-  if (sectionName === "Home") {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  } else {
-    const section = document.getElementById(sectionName);
-    if (section) {
-      const rect = section.getBoundingClientRect();
-      const offset = window.scrollY + rect.top - 0; // Ajusta el valor (60) según la altura del NavBar.
-      window.scrollTo({ top: offset, behavior: "smooth" });
-    }
-  }
-
-  setActiveSection(sectionName);
-  setNavBarOpen(false);
-};
-
   const [windowDimention, setWindowDimention] = useState({
     width: 0,
     height: 0,
