@@ -100,3 +100,23 @@
 .description p {
   margin-top: 5px;
 }
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .mainContent {
+    flex-direction: column;
+  }
+  .section {
+    max-width: 100%;
+  }
+  .aside {
+    max-width: 100%;
+  }
+  .techGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
