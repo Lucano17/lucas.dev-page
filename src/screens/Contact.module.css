@@ -71,6 +71,11 @@
     margin-top: 15px;
 }
 
+
+.formResponse {
+    margin-top: 10px;
+}
+
 @media (max-width: 800px) {
     .contact {
         margin-top: 0px;
