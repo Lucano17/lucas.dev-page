@@ -14,7 +14,7 @@ export const projects: ProjectsData = {
             "gitHubLink": "https://github.com/Lucano17/lucas.dev-page",
             "webLink": "",
             "images": ["lucas.dev-page.image1.png"],
-            "description": "Mi propia página web, hecha con TypeScript y Next, donde expongo mis conocimientos, proyectos y habilidades",
+            "description": "Mi propia página web, hecha con TypeScript y Next (próximamente este proyecto será mudado a Astro), donde expongo mis conocimientos, proyectos y habilidades",
             "techsUsed": [
                 { name: "HTML" },
                 { name: "CSS" },

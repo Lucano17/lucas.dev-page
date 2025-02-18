@@ -10,6 +10,8 @@ export async function POST(req: Request) {
 
         const { name, email, message, subject } = await req.json();
 
+        console.log("Response: ",name, email, message, subject)
+
         if (!name || !email || !message || !subject) {
             return NextResponse.json(
                 { success: false, error: "Faltan datos necesarios para enviar el correo" },
@@ -32,7 +34,11 @@ export async function POST(req: Request) {
             from: email,
             to: env.emailUser,
             subject: subject,
-            text: `Buenas! soy ${name}... ${message}`,
+            html: `<p>${message}</p>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <p><strong>${name}</strong><br>${email}</p>`,
         };
 
         await transporter.sendMail(mailOptions);
