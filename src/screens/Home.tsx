@@ -7,7 +7,12 @@ import { TechnologiesCard } from "@/components/technologies/TechnologiesCard";
 import Image from "next/image";
 import Link from "next/link";
 import { Techs } from "@/interfaces/projects.interface";
-import { cvIcon, gitHubIcon, gmailIcon, linkedInIcon } from "@/components/ui/Icons";
+import {
+  cvIcon,
+  gitHubIcon,
+  gmailIcon,
+  linkedInIcon,
+} from "@/components/ui/Icons";
 
 const principalTitle = "Tecnologías principales";
 const principalTechs: Techs[] = [
@@ -18,9 +23,7 @@ const principalTechs: Techs[] = [
   { name: "React.js" },
   { name: "Next.js" },
   { name: "Node.js" },
-  { name: "Zustand"},
-  { name: "PostgreSQL" },
- 
+  { name: "Zustand" },
 ];
 
 const secondaryTitle = "Tecnologías ocasionales";
@@ -28,8 +31,9 @@ const secondaryTechs: Techs[] = [
   { name: "React Native" },
   { name: "Angular" },
   { name: "Express.js" },
-  { name: "Redux"},
+  { name: "Redux" },
   { name: "MySQL" },
+  { name: "PostgreSQL" },
   { name: "MongoDB" },
   { name: "Prisma" },
   { name: "Docker" },
@@ -74,20 +78,18 @@ export const HomePage = () => {
             <Link href="https://github.com/Lucano17" target="_blank">
               {gitHubIcon}
             </Link>
-            <Link
-              href="/mailRedirect"
-              target="_blank"
-            >
+            <Link href="/mailRedirect" target="_blank">
               {gmailIcon}
             </Link>
-              <Link
+            <Link
               href="https://www.linkedin.com/in/lucas-de-la-fuente-040b01188/"
               target="_blank"
             >
-             {linkedInIcon}
+              {linkedInIcon}
             </Link>
-            <a href="pdf/cv-esp.pdf" download="CV - Lucas.dev - Esp.pdf">{cvIcon}</a>
-            
+            <a href="pdf/cv-esp.pdf" download="CV - Lucas.dev - Esp.pdf">
+              {cvIcon}
+            </a>
           </div>
         </aside>
       </div>
