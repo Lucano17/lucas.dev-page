@@ -10,7 +10,7 @@ export async function POST(req: Request) {
 
         const { name, email, message, subject } = await req.json();
 
-        console.log("Response: ",name, email, message, subject)
+        console.log("Response: ", name, email, message, subject)
 
         if (!name || !email || !message || !subject) {
             return NextResponse.json(
@@ -22,8 +22,8 @@ export async function POST(req: Request) {
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS,
+                user: env.emailUser,
+                pass: env.emailPassword,
             },
             tls: {
                 rejectUnauthorized: false,
@@ -40,8 +40,11 @@ export async function POST(req: Request) {
                    <br/>
                    <p><strong>${name}</strong><br>${email}</p>`,
         };
-
-        await transporter.sendMail(mailOptions);
+        try {
+            await transporter.sendMail(mailOptions);
+        } catch {
+            return NextResponse.json({ success: false, error: "Error al enviar el correo" }, { status: 500 });
+        }
 
         return NextResponse.json({ success: true, message: "Correo enviado" });
     } catch (error) {

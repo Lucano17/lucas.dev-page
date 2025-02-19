@@ -8,6 +8,7 @@ export type ValidFeatures =
     | "Aplicación móvil"
     | "Gestor de estado"
     | "Enrutado"
+    | "RESTful API"
     
 
 

@@ -22,7 +22,10 @@ export const projects: ProjectsData = {
                 { name: "React.js" },
                 { name: "Next.js" }],
             "features": [
-                "Desarrollo web", "Gestor de estado", "Enrutado"
+                "Desarrollo web",
+                "Gestor de estado",
+                "Enrutado",
+                "RESTful API",
             ],
         },
         {
@@ -44,13 +47,14 @@ export const projects: ProjectsData = {
                 { name: "Docker" }
             ],
             "features": [
-                "Desarrollo web", 
-                "Autenticación de usuario", 
-                "Base de datos SQL", 
-                "Gestor de estado", 
-                "Roles de usuario", 
+                "Desarrollo web",
+                "Autenticación de usuario",
+                "Base de datos SQL",
+                "Gestor de estado",
+                "Roles de usuario",
                 "Transacciones de pago",
                 "Enrutado",
+                "RESTful API",
             ],
         },
         {
@@ -74,6 +78,7 @@ export const projects: ProjectsData = {
                 "Autenticación de usuario",
                 "Base de datos NoSQL",
                 "Enrutado",
+                "RESTful API",
             ]
         },
         {
@@ -96,6 +101,7 @@ export const projects: ProjectsData = {
                 "Desarrollo web",
                 "Gestor de estado",
                 "Enrutado",
+                "RESTful API",
             ],
         },
         {
@@ -114,6 +120,7 @@ export const projects: ProjectsData = {
             "features": [
                 "Aplicación móvil",
                 "Enrutado",
+                "RESTful API",
             ],
         },
         {
