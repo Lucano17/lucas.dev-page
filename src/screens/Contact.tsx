@@ -13,7 +13,9 @@ export const Contact = () => {
   });
   const [response, setResponse] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -34,7 +36,7 @@ export const Contact = () => {
       const data = await res.json();
       if (data.success) {
         setResponse("Correo enviado con éxito");
-        setFormData({ name: "", email: "", message: "", subject: "", });
+        setFormData({ name: "", email: "", message: "", subject: "" });
       } else {
         setResponse("Error al enviar el correo");
       }
@@ -46,15 +48,10 @@ export const Contact = () => {
     }
   };
 
-
   return (
     <div id="Contact" className={styles.contact}>
       <h2>Contacto</h2>
-      <form
-        className={styles.form}
-        method="post"
-        onSubmit={handleSubmit}
-      >
+      <form className={styles.form} method="post" onSubmit={handleSubmit}>
         <label htmlFor="Name">Nombre completo o de la empresa</label>
         <input
           id="Name"
