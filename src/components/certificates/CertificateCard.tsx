@@ -15,7 +15,7 @@ export const CertificateCard = ({ certificate }: Props) => {
       <div className={styles.container}>
         <Link
           className={styles.linksContainer}
-          href={`${certificate?.certificateURL}`}
+          href={`https://${certificate?.certificateURL}`}
           target="_blank"
         >
           <FaExternalLinkAlt

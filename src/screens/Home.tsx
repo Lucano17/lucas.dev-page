@@ -1,9 +1,5 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { TechnologiesCard } from "@/components/technologies/TechnologiesCard";
-// import { IoLogoGithub, IoLogoLinkedin  } from "react-icons/io5";
-// import { BiLogoGmail } from "react-icons/bi";
-// import { TbFileCv } from "react-icons/tb";
 import Image from "next/image";
 import Link from "next/link";
 import { Techs } from "@/interfaces/projects.interface";
@@ -13,35 +9,62 @@ import {
   gmailIcon,
   linkedInIcon,
 } from "@/components/ui/Icons";
+import { StackCard } from "@/components/stacks/StackCard";
 
-const principalTitle = "Tecnologías principales";
-const principalTechs: Techs[] = [
+// const principalTitle = "Tecnologías principales";
+// const principalTechs: Techs[] = [
+//   { name: "HTML" },
+//   { name: "CSS" },
+//   { name: "JavaScript" },
+//   { name: "TypeScript" },
+//   { name: "React.js" },
+//   { name: "Next.js" },
+//   { name: "Node.js" },
+//   { name: "Zustand" },
+// ];
+
+// const secondaryTitle = "Tecnologías ocasionales";
+// const secondaryTechs: Techs[] = [
+//   { name: "React Native" },
+//   { name: "Express.js" },
+//   { name: "C#" },
+//   { name: ".Net" },
+//   { name: "Redux" },
+//   { name: "MySQL" },
+//   { name: "PostgreSQL" },
+//   { name: "Prisma" },
+//   { name: "MongoDB" },
+//   { name: "Docker" },
+//   { name: "Angular" },
+//   { name: "TailwindCSS" },
+//   { name: "Bootstrap" },
+// ];
+
+const frontEndTitle = "Front-end Stack"
+const frontEndTechs: Techs[] = [
   { name: "HTML" },
   { name: "CSS" },
   { name: "JavaScript" },
   { name: "TypeScript" },
   { name: "React.js" },
   { name: "Next.js" },
-  { name: "Node.js" },
   { name: "Zustand" },
-];
+  { name: "Redux" },
+  
+]
 
-const secondaryTitle = "Tecnologías ocasionales";
-const secondaryTechs: Techs[] = [
-  { name: "React Native" },
+const backEndTitle = "Back-end Stack"
+const backEndTechs: Techs[] = [
+  { name: "Node.js" },
   { name: "Express.js" },
   { name: "C#" },
   { name: ".Net" },
-  { name: "Redux" },
   { name: "MySQL" },
   { name: "PostgreSQL" },
   { name: "Prisma" },
   { name: "MongoDB" },
   { name: "Docker" },
-  { name: "Angular" },
-  { name: "TailwindCSS" },
-  { name: "Bootstrap" },
-];
+]
 
 export const HomePage = () => {
   return (
@@ -65,7 +88,7 @@ export const HomePage = () => {
           </p>
         </section>
         <aside>
-          <h1>DESARROLLADOR WEB</h1>
+          <h1>DESARROLLADOR FULL-STACK</h1>
           <p>de la Fuente, Lucas</p>
 
           <Image
@@ -96,9 +119,9 @@ export const HomePage = () => {
         </aside>
       </div>
 
-      <div className={styles.technologies}>
-        <TechnologiesCard title={principalTitle} techsUsed={principalTechs} />
-        <TechnologiesCard title={secondaryTitle} techsUsed={secondaryTechs} />
+      <div className={styles.stacks}>
+        <StackCard title={frontEndTitle} techsUsed={frontEndTechs} />
+        <StackCard title={backEndTitle} techsUsed={backEndTechs} />
       </div>
     </div>
   );

@@ -62,7 +62,7 @@ export default async function ProjectPage({ params }: { params: tParams }) {
             <h3>Visita el sitio web oficial del certificado:</h3>
             <div className={styles.projectLinks}>
               <Link
-                href={`${certificate.certificateURL}`}
+                href={`https://${certificate?.certificateURL}`}
                 target="_blank"
                 className={styles.link}
               >
