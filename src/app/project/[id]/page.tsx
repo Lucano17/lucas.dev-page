@@ -49,7 +49,7 @@ export default async function ProjectPage({ params }: { params: tParams }) {
         <section className={styles.section}>
           <Image
             src={`/projects/${project.images}`}
-            alt={`${project.title}` || "Imagen del proyecto"}
+            alt={"Imagen del proyecto no encontrada"}
             width={350}
             height={250}
             className={styles.projectImage}
@@ -57,13 +57,18 @@ export default async function ProjectPage({ params }: { params: tParams }) {
           <div className={styles.linksContainer}>
             <h3>Conoce más acerca del proyecto:</h3>
             <div className={styles.projectLinks}>
-              <Link
-                href={`${project.webLink}`}
-                target="_blank"
-                className={styles.link}
-              >
-                Web <span>{webLinkIcon}</span>
-              </Link>
+              {project.webLink ? (
+                <Link
+                  href={`${project.webLink}`}
+                  target="_blank"
+                  className={styles.link}
+                >
+                  Web <span>{webLinkIcon}</span>
+                </Link>
+              ) : (
+                ""
+              )}
+
               <Link
                 href={`${project.gitHubLink}`}
                 target="_blank"

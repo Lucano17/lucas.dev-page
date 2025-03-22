@@ -9,6 +9,8 @@ export type ValidFeatures =
     | "Gestor de estado"
     | "Enrutado"
     | "RESTful API"
+    | "Windows Forms"
+    | "Aplicación de escritorio"
     
 
 

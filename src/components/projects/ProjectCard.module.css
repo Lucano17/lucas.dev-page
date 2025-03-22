@@ -5,6 +5,7 @@
     border: 2px solid rgb(252, 103, 195);
     border-radius: 5px;
     min-width: 200px;
+    max-width: 200px;
     min-height: 245px;
 }
 
@@ -42,9 +43,15 @@
     justify-content: center;
     border-top: 1px solid pink;
     border-bottom: 1px solid pink;
-    width: 200px;
+    min-width: 196px;
+    max-width: 196px;
     height: 127px;
     padding: 0;
+}
+
+.linkCard {
+    min-width: 100%;
+    min-height: 245px;
 }
 
 .techsContainer {

@@ -27,31 +27,33 @@ export const ProjectCard = ({ project }: Props) => {
         </Link>
       </div>
       <Link href={`/project/${project?.id}`}>
-        <h3 className={styles.projectTitle}>{project?.title}</h3>
+        <div className={styles.linkCard}>
+          <h3 className={styles.projectTitle}>{project?.title}</h3>
 
-        <div className={styles.imagesContainer}>
-          {project?.images && project.images.length > 0 ? (
-            project.images.map((image) => (
-              <Image
-                key={project.title}
-                src={`/projects/${image}`}
-                alt={project?.title || "Imagen del proyecto"}
-                width={200}
-                height={125}
-              />
-            ))
-          ) : (
-            <p>No hay imágenes disponibles</p>
-          )}
-        </div>
-        <div className={styles.techsContainer}>
-          {project?.techsUsed && project.techsUsed.length > 0
-            ? project.techsUsed.map((tech, index) => (
-                <div key={index} className={styles.tech} title={tech.name}>
-                  {techIcons[tech.name || ""] || null}
-                </div>
+          <div className={styles.imagesContainer}>
+            {project?.images && project.images.length > 0 ? (
+              project.images.map((image) => (
+                <Image
+                  key={project.title}
+                  src={`/projects/${image}`}
+                  alt={"Imagen del proyecto no encontrada"}
+                  width={196}
+                  height={125}
+                />
               ))
-            : ""}
+            ) : (
+              <p>No hay imágenes disponibles</p>
+            )}
+          </div>
+          <div className={styles.techsContainer}>
+            {project?.techsUsed && project.techsUsed.length > 0
+              ? project.techsUsed.map((tech, index) => (
+                  <div key={index} className={styles.tech} title={tech.name}>
+                    {techIcons[tech.name || ""] || null}
+                  </div>
+                ))
+              : ""}
+          </div>
         </div>
       </Link>
     </div>

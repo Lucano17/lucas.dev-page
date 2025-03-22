@@ -14,7 +14,12 @@
     position: absolute;
     display: flex;
     margin-top: -15px;
-    margin-right: -190px;
+    margin-left: 180px;
+}
+
+.linkCard {
+    min-width: 100%;
+    min-height: 245px;
 }
 
 .linkItem {
@@ -44,7 +49,7 @@
     justify-content: center;
     border-top: 1px solid pink;
     border-bottom: 1px solid pink;
-    width: 200px;
+    width: 196px;
     height: 127px;
     padding: 0;
 }

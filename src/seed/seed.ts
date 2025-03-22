@@ -130,21 +130,39 @@ export const projects: ProjectsData = {
         },
         {
             "id": 6,
-            "title": "react-spa-template",
-            "gitHubLink": "https://github.com/Lucano17/my-landing-page",
-            "webLink": "https://earnest-croissant-d12ab3.netlify.app/",
-            "images": ["react-spa-template.image1.png"],
-            "description": "Mi primera app hecha con React",
+            "title": "EcoPos-System",
+            "gitHubLink": "https://github.com/Lucano17/EcoPoS-System",
+            "webLink": "",
+            "images": ["eco-pos-system.image1.png"],
+            "description": "Desarrollé un punto de venta con C#, .NET 8  y WindowsForms, donde tengo un formulario de ingreso de usuario, roles 'administrador' y 'usuario', me conecto a una base de datos y desde ahí opero con los productos, clientes, ventas y facturas.",
             "techsUsed": [
-                { name: "HTML" },
-                { name: "CSS" },
-                { name: "JavaScript" },
-                { name: "React.js" },
+                { name: "C#" },
+                { name: ".Net" },
+                { name: "SQL Server" },
             ],
             "features": [
-                "Desarrollo web"
+                "Aplicación de escritorio",
+                "Windows Forms",
             ]
         },
+        // {
+        //     "id": 7,
+        //     "title": "react-spa-template",
+        //     "gitHubLink": "https://github.com/Lucano17/my-landing-page",
+        //     "webLink": "https://earnest-croissant-d12ab3.netlify.app/",
+        //     "images": ["react-spa-template.image1.png"],
+        //     "description": "Mi primera app hecha con React",
+        //     "techsUsed": [
+        //         { name: "HTML" },
+        //         { name: "CSS" },
+        //         { name: "JavaScript" },
+        //         { name: "React.js" },
+        //     ],
+        //     "features": [
+        //         "Desarrollo web"
+        //     ]
+        // },
+        
 
     ]
 }
@@ -156,14 +174,14 @@ export const certificates: CertificatesData = {
             title: "Next.js framework with TypeScript",
             description: "",
             techsLearned: [
-                {name: "HTML"},
-                {name: "CSS"},
-                {name: "TypeScript"},
-                {name: "React.js"},
-                {name: "Next.js"},
-                {name: "PostgreSQL"},
-                {name: "Zustand"},
-                {name: "Redux"},
+                { name: "HTML" },
+                { name: "CSS" },
+                { name: "TypeScript" },
+                { name: "React.js" },
+                { name: "Next.js" },
+                { name: "PostgreSQL" },
+                { name: "Zustand" },
+                { name: "Redux" },
             ],
             image: ["certificate.nextjs.jpg"],
             certificateURL: "ude.my/UC-d74a1298-b34a-4e14-86c7-8fb824f7d678",
@@ -174,11 +192,11 @@ export const certificates: CertificatesData = {
             title: "Curso profesional de C# Avanzado",
             description: "",
             techsLearned: [
-                {name: "HTML"},
-                {name: "CSS"},
-                {name: "C#"},
-                {name: ".Net"},
-                {name: "SQL Server"},
+                { name: "HTML" },
+                { name: "CSS" },
+                { name: "C#" },
+                { name: ".Net" },
+                { name: "SQL Server" },
             ],
             image: ["certificate.csharp.jpg"],
             certificateURL: "ude.my/UC-a666080c-b18b-4d33-a3a4-d5f9da0979e4",
