@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(252, 103, 195);
+    border-radius: 5px;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 245px;
+}
+
+.linksContainer {
+    color: rgb(255, 0, 170);;
+    position: absolute;
+    display: flex;
+    margin-top: -15px;
+    margin-right: -190px;
+}
+
+.linkItem {
+    background-color: black;
+}
+
+.webItem {
+    font-size: 22px;
+    margin-left: -30px;
+}
+
+.gitItem {
+    font-size: 25px;
+}
+
+.projectTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.imagesContainer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid pink;
+    border-bottom: 1px solid pink;
+    width: 200px;
+    height: 127px;
+    padding: 0;
+}
+
+.techsContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.tech {
+    font-size: 22px;
+    color: rgb(253, 177, 224);
+}

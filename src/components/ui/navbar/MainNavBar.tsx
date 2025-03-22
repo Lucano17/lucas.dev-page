@@ -6,7 +6,7 @@ import { BackNavBar } from "@/components/ui/navbar/BackNavBar";
 
 export const MainNavBar = () => {
   const pathname = usePathname();
-  if (pathname.startsWith("/project")) {
+  if (pathname.startsWith("/project") || pathname.startsWith("/certificate") ) {
     return <BackNavBar />;
   }
   return <NavBar />;

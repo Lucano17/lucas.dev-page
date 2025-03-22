@@ -20,11 +20,17 @@ import {
   SiMongodb,
   SiExpress,
   SiRedux,
+  SiDotnet,
 } from "react-icons/si";
-import { TbSquareLetterZ, TbBrandReactNative } from "react-icons/tb";
+import { DiMsqlServer } from "react-icons/di";
+import {
+  TbSquareLetterZ,
+  TbBrandReactNative,
+  TbBrandCSharp,
+} from "react-icons/tb";
 import { JSX } from "react";
 
-export const techIcons: Record<string, JSX.Element> = {
+export const techIcons: Record<string, JSX.Element | string> = {
   JavaScript: <SiJavascript />,
   TypeScript: <SiTypescript />,
   HTML: <SiHtml5 />,
@@ -33,7 +39,10 @@ export const techIcons: Record<string, JSX.Element> = {
   "Next.js": <SiNextdotjs />,
   "Node.js": <SiNodedotjs />,
   "Express.js": <SiExpress />,
+  "C#": <TbBrandCSharp />,
+  ".Net": <SiDotnet />,
   PostgreSQL: <SiPostgresql />,
+  "SQL Server": <DiMsqlServer />,
   MySQL: <SiMysql />,
   "React Native": <TbBrandReactNative />,
   Angular: <SiAngular />,

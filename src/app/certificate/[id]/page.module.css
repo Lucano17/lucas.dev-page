@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projectImage {
+  border: 2px solid pink;
+}
+
+.certificateNumber {
+  margin-top: 10px;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(auto);
+  margin-top: 15px;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(auto);
+  margin-top: 15px;
+}
+
+.techsContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.techIcons {
+  color: rgb(234, 134, 204);
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.link {
+  display: flex;
+  border: 1px solid pink;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.link span {
+  margin-left: 10px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+.description h3 {
+  display: flex;
+  justify-content: center;
+}
+.description p {
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .mainContent {
+    flex-direction: column;
+  }
+  .section {
+    max-width: 100%;
+  }
+  .aside {
+    max-width: 100%;
+  }
+  .techGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projectLinks {
+    margin: auto;
+    margin-top: 15px;
+  }
+  .featuresContainer {
+    margin-top: 20px;
+  }
+}

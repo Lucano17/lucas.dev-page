@@ -16,6 +16,7 @@ export const NavBar = () => {
   const links = useMemo(() => [
     { id: 1, link: "Home", navName: "Inicio" },
     { id: 2, link: "Projects", navName: "Proyectos" },
+    { id: 3, link: "Certificates", navName: "Certificados" },
     { id: 4, link: "Contact", navName: "Contacto" },
   ], []);
 

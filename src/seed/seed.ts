@@ -1,7 +1,12 @@
+import { Certificate } from "@/interfaces/certificates.interface";
 import { Project } from "@/interfaces/projects.interface";
 
 interface ProjectsData {
     projects: Project[]
+}
+
+interface CertificatesData {
+    certificates: Certificate[]
 }
 
 export const projects: ProjectsData = {
@@ -141,5 +146,43 @@ export const projects: ProjectsData = {
             ]
         },
 
+    ]
+}
+
+export const certificates: CertificatesData = {
+    certificates: [
+        {
+            "id": 1,
+            title: "Next.js framework with TypeScript",
+            description: "",
+            techsLearned: [
+                {name: "HTML"},
+                {name: "CSS"},
+                {name: "TypeScript"},
+                {name: "React.js"},
+                {name: "Next.js"},
+                {name: "PostgreSQL"},
+                {name: "Zustand"},
+                {name: "Redux"},
+            ],
+            image: ["certificate.nextjs.jpg"],
+            certificateURL: "ude.my/UC-d74a1298-b34a-4e14-86c7-8fb824f7d678",
+            certificateNumber: "UC-d74a1298-b34a-4e14-86c7-8fb824f7d678",
+        },
+        {
+            "id": 2,
+            title: "Curso profesional de C# Avanzado",
+            description: "",
+            techsLearned: [
+                {name: "HTML"},
+                {name: "CSS"},
+                {name: "C#"},
+                {name: ".Net"},
+                {name: "SQL Server"},
+            ],
+            image: ["certificate.csharp.jpg"],
+            certificateURL: "ude.my/UC-a666080c-b18b-4d33-a3a4-d5f9da0979e4",
+            certificateNumber: "UC-a666080c-b18b-4d33-a3a4-d5f9da0979e4",
+        }
     ]
 }

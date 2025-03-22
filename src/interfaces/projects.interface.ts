@@ -21,8 +21,11 @@ export type ValidTechs =
     | "Next.js" 
     | "Node.js" 
     | "Express.js"
+    | "C#"
+    | ".Net"
     | "PostgreSQL" 
     | "MySQL" 
+    | "SQL Server"
     | "MongoDB"
     | "React Native" 
     | "Angular" 
@@ -39,11 +42,11 @@ export interface Techs {
 }
 
 export interface Project {
-    id?: number
-    title?: string,
-    techsUsed?: Techs[],
+    id: number
+    title: string,
+    techsUsed: Techs[],
     features?: ValidFeatures[],
-    description?: string,
+    description: string,
     images?: string[],
     gitHubLink?: string,
     webLink?: string,
