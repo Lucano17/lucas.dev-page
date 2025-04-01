@@ -42,7 +42,7 @@ export const techIcons: Record<string, JSX.Element | string> = {
   "C#": <TbBrandCSharp />,
   ".Net": <SiDotnet />,
   PostgreSQL: <SiPostgresql />,
-  "SQL Server": <DiMsqlServer />,
+  "Microsoft SQL Server": <DiMsqlServer />,
   MySQL: <SiMysql />,
   "React Native": <TbBrandReactNative />,
   Angular: <SiAngular />,

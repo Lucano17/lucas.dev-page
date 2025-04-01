@@ -112,7 +112,7 @@ export const HomePage = () => {
             >
               {linkedInIcon}
             </Link>
-            <a href="pdf/cv-esp.pdf" download="CV - Lucas.dev - Esp.pdf">
+            <a href="pdf/cv-esp.pdf" download="CV-Lucas.dev-Esp.pdf">
               {cvIcon}
             </a>
           </div>

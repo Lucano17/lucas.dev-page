@@ -27,7 +27,7 @@ export type ValidTechs =
     | ".Net"
     | "PostgreSQL" 
     | "MySQL" 
-    | "SQL Server"
+    | "Microsoft SQL Server"
     | "MongoDB"
     | "React Native" 
     | "Angular" 

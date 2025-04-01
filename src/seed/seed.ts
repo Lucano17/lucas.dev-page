@@ -138,7 +138,7 @@ export const projects: ProjectsData = {
             "techsUsed": [
                 { name: "C#" },
                 { name: ".Net" },
-                { name: "SQL Server" },
+                { name: "Microsoft SQL Server" },
             ],
             "features": [
                 "Aplicación de escritorio",
@@ -172,7 +172,7 @@ export const certificates: CertificatesData = {
         {
             "id": 1,
             title: "Next.js framework with TypeScript",
-            description: "",
+            description: "Este curso cuenta con una amplia gama de tecnologías y recursos altamente útiles para desarrollar aplicaciones web robustas. Entre las más testacables se encuentran TypeScript, React.js, Next.js, base de datos SQL y más. Este curso cuenta con un proyecto final muy completo: un E-commerce con base de datos SQL, registro y gestión de usuarios, con sus roles y permisos pertinentes. Además le agregué por mi cuenta transacciones de pago mediante Mercado Pago (el curso está hecho con PayPal, pero no tengo permisos en Argentina). Este proyecto me parece muy interesante, ya que cuenta con un fuerte desarrollo tanto en el Front-end como en el Back-end.",
             techsLearned: [
                 { name: "HTML" },
                 { name: "CSS" },
@@ -190,13 +190,13 @@ export const certificates: CertificatesData = {
         {
             "id": 2,
             title: "Curso profesional de C# Avanzado",
-            description: "",
+            description: "En este curso aprendí los fundamentos de C# y .NET, además de aprender y usar la interfaz gráfica de Windows Forms y ASP.NET, y la base de datos Microsoft SQL Server. Este curso cuenta con un proyecto final muy interesante, una aplicación Point of Sell de escritorio, con registro y gestión de usuarios, con sus roles y permisos pertinentes. Con lo aprendido en este curso, podré desarrollar tanto aplicaciones de escritorio como para la web.",
             techsLearned: [
                 { name: "HTML" },
                 { name: "CSS" },
                 { name: "C#" },
                 { name: ".Net" },
-                { name: "SQL Server" },
+                { name: "Microsoft SQL Server" },
             ],
             image: ["certificate.csharp.jpg"],
             certificateURL: "ude.my/UC-a666080c-b18b-4d33-a3a4-d5f9da0979e4",
