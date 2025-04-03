@@ -20,9 +20,8 @@ import {
   SiMongodb,
   SiExpress,
   SiRedux,
-  SiDotnet,
 } from "react-icons/si";
-import { DiMsqlServer } from "react-icons/di";
+import { DiMsqlServer, DiDotnet  } from "react-icons/di";
 import {
   TbSquareLetterZ,
   TbBrandReactNative,
@@ -40,7 +39,7 @@ export const techIcons: Record<string, JSX.Element | string> = {
   "Node.js": <SiNodedotjs />,
   "Express.js": <SiExpress />,
   "C#": <TbBrandCSharp />,
-  ".Net": <SiDotnet />,
+  ".Net": <DiDotnet />,
   PostgreSQL: <SiPostgresql />,
   "Microsoft SQL Server": <DiMsqlServer />,
   MySQL: <SiMysql />,
