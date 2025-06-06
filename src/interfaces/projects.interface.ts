@@ -11,6 +11,10 @@ export type ValidFeatures =
     | "RESTful API"
     | "Windows Forms"
     | "Aplicación de escritorio"
+    | "Historial de órdenes / ventas"
+    | "Categorización de productos"
+    | "Generar PDF de venta"
+    | "Generar Excel de ventas"
     
 
 
@@ -50,6 +54,8 @@ export interface Project {
     features?: ValidFeatures[],
     description: string,
     images?: string[],
+    show: boolean,
+    position?: number,
     gitHubLink?: string,
     webLink?: string,
 }

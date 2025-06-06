@@ -15,7 +15,9 @@ export const projects: ProjectsData = {
 
         {
             "id": 1,
-            "title": "lucas.dev-page",
+            "title": "Mi portfolio",
+            "show": true,
+            "position": 1,
             "gitHubLink": "https://github.com/Lucano17/lucas.dev-page",
             "webLink": "",
             "images": ["lucas.dev-page.image1.png"],
@@ -35,7 +37,9 @@ export const projects: ProjectsData = {
         },
         {
             "id": 2,
-            "title": "ecommerce-template-1",
+            "title": "Tienda online",
+            "show": true,
+            "position": 2,
             "gitHubLink": "https://github.com/Lucano17/ecommerce-template-1",
             "webLink": "https://ecommerce-template-1.vercel.app/",
             "images": ["ecommerce-template.image1.png"],
@@ -60,11 +64,15 @@ export const projects: ProjectsData = {
                 "Transacciones de pago",
                 "Enrutado",
                 "RESTful API",
+                "Categorización de productos",
+                "Historial de órdenes / ventas"
             ],
         },
         {
             "id": 3,
-            "title": "tasks-manager",
+            "title": "Tasks Manager",
+            "show": true,
+            "position": 4,
             "gitHubLink": "https://github.com/Lucano17/task-manager",
             "webLink": "https://task-manager-sigma-two-21.vercel.app/",
             "images": ["task-manager.image1.png"],
@@ -88,7 +96,9 @@ export const projects: ProjectsData = {
         },
         {
             "id": 4,
-            "title": "poke-api",
+            "title": "Poke Api",
+            "show": true,
+            "position": 6,
             "gitHubLink": "https://github.com/Lucano17/poke-api",
             "webLink": "https://poke-api-vert-one.vercel.app",
             "images": ["poke-api.image1.png"],
@@ -111,7 +121,8 @@ export const projects: ProjectsData = {
         },
         {
             "id": 5,
-            "title": "react-native-games-library",
+            "title": "Biblioteca de videojuegos - Mobile",
+            "show": false,
             "gitHubLink": "https://github.com/Lucano17/react-native-games-library",
             "webLink": "",
             "images": ["react-native-games-library.image1.jpeg"],
@@ -130,7 +141,9 @@ export const projects: ProjectsData = {
         },
         {
             "id": 6,
-            "title": "EcoPos-System",
+            "title": "Point of Sell - Eco",
+            "show": true,
+            "position": 5,
             "gitHubLink": "https://github.com/Lucano17/EcoPoS-System",
             "webLink": "",
             "images": ["eco-pos-system.image1.png"],
@@ -143,6 +156,34 @@ export const projects: ProjectsData = {
             "features": [
                 "Aplicación de escritorio",
                 "Windows Forms",
+                "Autenticación de usuario",
+                "Base de datos SQL",
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Point of Sell - Mid",
+            "show": true,
+            "position": 3,
+            "gitHubLink": "https://github.com/Lucano17/MidPoS-System",
+            "webLink": "",
+            "images": ["mid-pos-system.image1.png"],
+            "description": "Desarrollé un Punto de Venta con C#, .NET 8, WinForms y Microsoft SQL Server, donde no solo podés realizar tus ventas con una interfaz cómoda, eficiente e intuitiva, sino también ordenar tus productos por categoráis, manejar distintos timpos y roles de usuario, ver el historial de ventas, ventas realizadas por tus vendedores, realizar reportes de las mismas y mucho más!.",
+            "techsUsed": [
+                { name: "C#" },
+                { name: ".Net" },
+                { name: "Microsoft SQL Server" },
+            ],
+            "features": [
+                "Aplicación de escritorio",
+                "Windows Forms",
+                "Autenticación de usuario",
+                "Roles de usuario",
+                "Base de datos SQL",
+                "Categorización de productos",
+                "Historial de órdenes / ventas",
+                "Generar PDF de venta",
+                "Generar Excel de ventas"
             ]
         },
         // {
