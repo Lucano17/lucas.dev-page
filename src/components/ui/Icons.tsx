@@ -1,7 +1,7 @@
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import { TbFileCv } from "react-icons/tb";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaDesktop, FaMobile } from "react-icons/fa";
 import {
   SiJavascript,
   SiTypescript,
@@ -21,13 +21,20 @@ import {
   SiExpress,
   SiRedux,
 } from "react-icons/si";
-import { DiMsqlServer, DiDotnet  } from "react-icons/di";
+import { DiMsqlServer, DiDotnet } from "react-icons/di";
 import {
   TbSquareLetterZ,
   TbBrandReactNative,
   TbBrandCSharp,
 } from "react-icons/tb";
+import { MdOutlineWeb } from "react-icons/md";
 import { JSX } from "react";
+
+export const platformIcons: Record<string, JSX.Element | string> = {
+  Escritorio: <FaDesktop />,
+  Celular: <FaMobile />,
+  Web: <MdOutlineWeb />,
+};
 
 export const techIcons: Record<string, JSX.Element | string> = {
   JavaScript: <SiJavascript />,

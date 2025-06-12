@@ -20,6 +20,7 @@ export const projects: ProjectsData = {
             "position": 1,
             "gitHubLink": "https://github.com/Lucano17/lucas.dev-page",
             "webLink": "",
+            "platform": {name: "Web"},
             "images": ["lucas.dev-page.image1.png"],
             "description": "Mi propia página web, hecha con TypeScript y Next (próximamente este proyecto será mudado a Astro), donde expongo mis conocimientos, proyectos y habilidades",
             "techsUsed": [
@@ -42,6 +43,7 @@ export const projects: ProjectsData = {
             "position": 2,
             "gitHubLink": "https://github.com/Lucano17/ecommerce-template-1",
             "webLink": "https://ecommerce-template-1.vercel.app/",
+            "platform": {name: "Web"},
             "images": ["ecommerce-template.image1.png"],
             "description": "Este es un ecommerce de prueba hecho con Next y PosgreSQL, donde probé todas mis habilidades en conjunto para crear una tienda completamente funcional con base de datos y transacciones.",
             "techsUsed": [
@@ -75,6 +77,7 @@ export const projects: ProjectsData = {
             "position": 4,
             "gitHubLink": "https://github.com/Lucano17/task-manager",
             "webLink": "https://task-manager-sigma-two-21.vercel.app/",
+            "platform": {name: "Web"},
             "images": ["task-manager.image1.png"],
             "description": "Una TO-DO app hecha con react y express, donde puedes crear una lista de lo que necesites! Desde productos para comprar, actividades a realizar, personas, objetivos y más!",
             "techsUsed": [
@@ -101,6 +104,7 @@ export const projects: ProjectsData = {
             "position": 6,
             "gitHubLink": "https://github.com/Lucano17/poke-api",
             "webLink": "https://poke-api-vert-one.vercel.app",
+            "platform": {name: "Web"},
             "images": ["poke-api.image1.png"],
             "description": "No solo una simple PokeApi, toda la PokeInfo que buscas!",
             "techsUsed": [
@@ -125,6 +129,7 @@ export const projects: ProjectsData = {
             "show": false,
             "gitHubLink": "https://github.com/Lucano17/react-native-games-library",
             "webLink": "",
+            "platform": {name: "Celular"},
             "images": ["react-native-games-library.image1.jpeg"],
             "description": "Aplicación hecha con React Native y Expo, además de NativeWind (TailwindCSS). Esta app hace una llamada a la API de Giant Bomb API, y recupera una lista de juegos y varios datos relacionados con los mismos",
             "techsUsed": [
@@ -146,6 +151,7 @@ export const projects: ProjectsData = {
             "position": 5,
             "gitHubLink": "https://github.com/Lucano17/EcoPoS-System",
             "webLink": "",
+            "platform": {name: "Escritorio"},
             "images": ["eco-pos-system.image1.png"],
             "description": "Desarrollé un punto de venta con C#, .NET 8  y WindowsForms, donde tengo un formulario de ingreso de usuario, roles 'administrador' y 'usuario', me conecto a una base de datos y desde ahí opero con los productos, clientes, ventas y facturas.",
             "techsUsed": [
@@ -156,8 +162,7 @@ export const projects: ProjectsData = {
             "features": [
                 "Aplicación de escritorio",
                 "Windows Forms",
-                "Autenticación de usuario",
-                "Base de datos SQL",
+                "Autenticación de usuario"
             ]
         },
         {
@@ -167,6 +172,7 @@ export const projects: ProjectsData = {
             "position": 3,
             "gitHubLink": "https://github.com/Lucano17/MidPoS-System",
             "webLink": "",
+            "platform": {name: "Escritorio"},
             "images": ["mid-pos-system.image1.png"],
             "description": "Desarrollé un Punto de Venta con C#, .NET 8, WinForms y Microsoft SQL Server, donde no solo podés realizar tus ventas con una interfaz cómoda, eficiente e intuitiva, sino también ordenar tus productos por categoráis, manejar distintos timpos y roles de usuario, ver el historial de ventas, ventas realizadas por tus vendedores, realizar reportes de las mismas y mucho más!.",
             "techsUsed": [

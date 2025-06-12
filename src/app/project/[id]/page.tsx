@@ -3,7 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { techIcons } from "@/components/ui/Icons";
+import { platformIcons, techIcons } from "@/components/ui/Icons";
 import { gitHubIcon, webLinkIcon } from "@/components/ui/Icons";
 
 type tParams = Promise<{ id: string }>;
@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: { params: tParams }) {
 export default async function ProjectPage({ params }: { params: tParams }) {
   const id = Number((await params).id);
   const project = projects.projects.find((project) => project.id === id);
+  // const platformName = project?.platform.name;
 
   if (!project) {
     notFound();
@@ -45,6 +46,13 @@ export default async function ProjectPage({ params }: { params: tParams }) {
   return (
     <div className={styles.container}>
       <h1>Proyecto: {project?.title}</h1>
+      {project.platform.name && (
+        <div className={styles.platformContainer}>
+          <span className={styles.platformIcon}>{platformIcons[project.platform.name] ?? null}</span>
+          <p className={styles.platformTitle}>{project.platform.name}</p>
+        </div>
+      )}
+
       <div className={styles.mainContent}>
         <section className={styles.section}>
           <Image
@@ -90,7 +98,7 @@ export default async function ProjectPage({ params }: { params: tParams }) {
                     className={styles.techsContainer}
                   >
                     <p className={styles.techIcons}>
-                      {techIcons[tech.name || ""] || null}
+                      {techIcons[tech.name!] ?? null}
                     </p>
                     <p>{tech.name}</p>
                   </div>

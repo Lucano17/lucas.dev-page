@@ -15,6 +15,11 @@ export type ValidFeatures =
     | "Categorización de productos"
     | "Generar PDF de venta"
     | "Generar Excel de ventas"
+
+export type ValidPlatforms =
+    | "Escritorio"
+    | "Web"
+    | "Celular"
     
 
 
@@ -42,8 +47,13 @@ export type ValidTechs =
     | "Redux"
     | "Zustand"
 
+
+export interface Platform {
+    name: ValidPlatforms,
+    image?: string
+}
 export interface Techs {
-    name?: ValidTechs,
+    name: ValidTechs,
     image?: string,
 }
 
@@ -53,6 +63,7 @@ export interface Project {
     techsUsed: Techs[],
     features?: ValidFeatures[],
     description: string,
+    platform: Platform,
     images?: string[],
     show: boolean,
     position?: number,

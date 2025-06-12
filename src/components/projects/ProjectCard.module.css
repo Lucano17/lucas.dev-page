@@ -38,6 +38,15 @@
     font-size: 14px;
 }
 
+.platformTitle {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: rgb(253, 177, 224);
+}
+
 .imagesContainer {
     display: flex;
     justify-content: center;

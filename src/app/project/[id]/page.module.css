@@ -13,6 +13,27 @@
   margin-top: 20px;
 }
 
+.platformContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  font-size: 20px;
+  gap: 10px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 5px;
+}
+
+.platformIcon {
+  display: flex;
+}
+
+.platformTitle {
+  display: flex;
+}
+
 .section {
   display: flex;
   flex-direction: column;

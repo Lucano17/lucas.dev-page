@@ -29,6 +29,7 @@ export const ProjectCard = ({ project }: Props) => {
       <Link href={`/project/${project?.id}`}>
         <div className={styles.linkCard}>
           <h3 className={styles.projectTitle}>{project?.title}</h3>
+          <h6 className={styles.platformTitle}>{project?.platform.name}</h6>
 
           <div className={styles.imagesContainer}>
             {project?.images && project.images.length > 0 ? (

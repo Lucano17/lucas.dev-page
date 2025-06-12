@@ -11,35 +11,6 @@ import {
 } from "@/components/ui/Icons";
 import { StackCard } from "@/components/stacks/StackCard";
 
-// const principalTitle = "Tecnologías principales";
-// const principalTechs: Techs[] = [
-//   { name: "HTML" },
-//   { name: "CSS" },
-//   { name: "JavaScript" },
-//   { name: "TypeScript" },
-//   { name: "React.js" },
-//   { name: "Next.js" },
-//   { name: "Node.js" },
-//   { name: "Zustand" },
-// ];
-
-// const secondaryTitle = "Tecnologías ocasionales";
-// const secondaryTechs: Techs[] = [
-//   { name: "React Native" },
-//   { name: "Express.js" },
-//   { name: "C#" },
-//   { name: ".Net" },
-//   { name: "Redux" },
-//   { name: "MySQL" },
-//   { name: "PostgreSQL" },
-//   { name: "Prisma" },
-//   { name: "MongoDB" },
-//   { name: "Docker" },
-//   { name: "Angular" },
-//   { name: "TailwindCSS" },
-//   { name: "Bootstrap" },
-// ];
-
 const frontEndTitle = "Front-end Stack"
 const frontEndTechs: Techs[] = [
   { name: "HTML" },
@@ -112,7 +83,7 @@ export const HomePage = () => {
             >
               {linkedInIcon}
             </Link>
-            <a href="pdf/cv-esp.pdf" download="CV-Lucas.dev-Esp.pdf">
+            <a href="pdf/cv-esp.pdf" download="CV-Lucas.delaFuente-Esp.pdf">
               {cvIcon}
             </a>
           </div>
