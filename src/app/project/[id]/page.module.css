@@ -48,6 +48,7 @@
   align-items: center;
   width: 50%;
   max-width: 50%;
+  margin-right: 25px;
 }
 
 .data {
@@ -78,7 +79,7 @@
   margin-top: 15px;
 }
 
-:global(li::marker) {
+.featureGrid li::marker {
   color: rgb(234, 134, 204);
 }
 
@@ -170,6 +171,7 @@
     margin: auto;
     width: 100%;
     max-width: 100%;
+      margin-right: 0;
   }
   .techsContainer {
     display: flex;
