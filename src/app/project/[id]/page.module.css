@@ -131,11 +131,11 @@
   padding-bottom: 40px;
 }
 
-h1 {
+.container h1 {
   color: rgb(234, 134, 204);
 }
 
-h2 {
+.container h2 {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid white;
