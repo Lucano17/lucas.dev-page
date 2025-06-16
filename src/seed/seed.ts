@@ -106,7 +106,7 @@ export const projects: ProjectsData = {
             "webLink": "https://poke-api-vert-one.vercel.app",
             "platform": {name: "Web"},
             "images": ["poke-api.image1.png"],
-            "description": "No solo una simple PokeApi, toda la PokeInfo que buscas!",
+            "description": "No solo una simple PokeApi, toda la PokeInfo que buscas! Cuenta con un menú para ver una lista de los 151 pokémon de Kanto, tus evoluciones, sus sprites, sus versiones variocolor (shiny) y sus movimientos. También podrás ver sus tipos elementales, con un diseño personalizado para cada uno. También podrás marcar tus pokémon favoritos y guardarlos en el almacenamiento local de tu navegador de preferencia",
             "techsUsed": [
                 { name: "HTML" },
                 { name: "TailwindCSS" },

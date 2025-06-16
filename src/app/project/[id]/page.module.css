@@ -38,16 +38,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
-  max-width: 45%;
+  width: 50%;
+  max-width: 50%;
 }
 
 .aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 55%;
-  max-width: 55%;
+  width: 50%;
+  max-width: 50%;
 }
 
 .data {
@@ -57,7 +57,7 @@
 }
 
 .projectImage {
-  border: 2px solid pink;
+  border: 3px solid pink;
 }
 
 .techGrid {
@@ -71,12 +71,23 @@
 .featureGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-column-gap: 25px;
+  grid-row-gap: 5px;
   grid-auto-rows: minmax(auto);
+  margin-left: 14px;
   margin-top: 15px;
 }
 
+:global(li::marker) {
+  color: rgb(234, 134, 204);
+}
+
 .techsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.techsList {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -119,10 +130,17 @@
   padding-bottom: 40px;
 }
 
-.description h3 {
+:global(h1) {
+  color: rgb(234, 134, 204);
+}
+
+:global(h2) {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 3px;
 }
+
 .description p {
   margin-top: 5px;
 }
@@ -130,17 +148,32 @@
 @media (max-width: 800px) {
   .container {
     display: flex;
+    justify-content: center;
+    margin: auto;
     flex-direction: column;
+    width: 80%;
     max-width: 80%;
   }
   .mainContent {
     flex-direction: column;
   }
   .section {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
     max-width: 100%;
   }
   .aside {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
     max-width: 100%;
+  }
+  .techsContainer {
+    display: flex;
+    justify-content: center;
   }
   .techGrid {
     grid-template-columns: repeat(3, 1fr);

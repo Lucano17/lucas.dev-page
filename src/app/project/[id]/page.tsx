@@ -38,17 +38,18 @@ export async function generateMetadata({ params }: { params: tParams }) {
 export default async function ProjectPage({ params }: { params: tParams }) {
   const id = Number((await params).id);
   const project = projects.projects.find((project) => project.id === id);
-  // const platformName = project?.platform.name;
 
   if (!project) {
     notFound();
   }
   return (
     <div className={styles.container}>
-      <h1>Proyecto: {project?.title}</h1>
+      <h1>{project?.title}</h1>
       {project.platform.name && (
         <div className={styles.platformContainer}>
-          <span className={styles.platformIcon}>{platformIcons[project.platform.name] ?? null}</span>
+          <span className={styles.platformIcon}>
+            {platformIcons[project.platform.name] ?? null}
+          </span>
           <p className={styles.platformTitle}>{project.platform.name}</p>
         </div>
       )}
@@ -89,14 +90,11 @@ export default async function ProjectPage({ params }: { params: tParams }) {
         </section>
         <aside className={styles.aside}>
           <div className={styles.data}>
-            <div>
+            <div className={styles.techsContainer}>
               <h2>Tecnologías usadas:</h2>
               <div className={styles.techGrid}>
                 {project.techsUsed?.map((tech) => (
-                  <div
-                    key={`${tech.name}-${id}`}
-                    className={styles.techsContainer}
-                  >
+                  <div key={`${tech.name}-${id}`} className={styles.techsList}>
                     <p className={styles.techIcons}>
                       {techIcons[tech.name!] ?? null}
                     </p>
@@ -115,11 +113,10 @@ export default async function ProjectPage({ params }: { params: tParams }) {
                 </ul>
               </div>
             </div>
-          </div>
-
-          <div className={styles.description}>
-            <h3>Descripción</h3>
-            <p>{project.description}</p>
+            <div className={styles.description}>
+              <h2>Descripción</h2>
+              <p>{project.description}</p>
+            </div>
           </div>
         </aside>
       </div>
