@@ -130,11 +130,11 @@
         position: relative;
         font-weight: 400;
         padding-top: 0px;
-        font-size: 1.3em;
+        font-size: 1.0em;
         transition: 0.5s;
     }
     .navLink:hover {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .navOnScroll {
         align-content: center;
