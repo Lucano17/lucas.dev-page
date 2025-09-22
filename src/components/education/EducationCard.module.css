@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgb(30, 1, 30);
+  border-bottom: 1px solid rgb(30, 1, 30);
+  padding: 20px;
+}
+
+.container h3 {
+  color: rgb(255, 192, 253);
+}
+
+.institutionHeadContainer {
+  display: flex;
+}
+
+.institutionHeadContainer h4 {
+  display: flex;
+  margin-left: 5px;
+}
+
+.detailsDialog {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  height: 75%;
+  border: 2px solid rgb(196, 38, 170);
+  border-radius: 9px;
+}
+
+.openDialogButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(255, 0, 170);
+  margin-top: 10px;
+  align-self: center;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.dataContainer span {
+  color: rgb(255, 192, 253);
+}

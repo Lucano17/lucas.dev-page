@@ -1,0 +1,63 @@
+.blackBackground {
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.3);
+  top: 9vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.blurBackground {
+  position: fixed;
+  backdrop-filter: blur(2px);
+  top: 9vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.dialogContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgb(16, 1, 32), rgb(7, 0, 14));
+  border: 2px solid rgb(252, 103, 195);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 9px;
+  padding: 20px;
+  gap: 25px;
+  z-index: 11;
+}
+
+.careerTitle{
+    border: none;
+}
+
+.dialogContainer button {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  align-self: center;
+}
+
+.downloadPDF {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(5, 0, 8);
+  border: 2px solid rgb(195, 13, 110);
+  text-decoration: none;
+  border-radius: 9px;
+  font-size: 10px;
+  padding: 5px;
+  align-self: flex-start;
+}

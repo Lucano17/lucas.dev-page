@@ -20,7 +20,7 @@ export const education: EducationData = {
             id: 1,
             institutionName: "Universidad Tecnológica Nacional",
             careerName: "Tecnicatura Universitaria en Programación",
-            institutionLogo: "utn-logo.jpg",
+            institutionLogo: "utn_logo.jpg",
             grade: "Pre-grado",
             years: 2,
             hours: 1375,
@@ -29,7 +29,7 @@ export const education: EducationData = {
                     "Organización Empresarial", "Matemáticas"],
                 secondQ: ["Programación II", "Base de datos I", "Probabilidad y Estadística", "Inglés I"],
                 thirdQ: ["Programación III", "Base de datos II", "Metodología de Sistemas I", "Inglés II"],
-                fourth: ["Programación IV", "Metodología de Sistemas II",
+                fourthQ: ["Programación IV", "Metodología de Sistemas II",
                     "Introducción al análisis de datos", "Legislación",
                     "Gestión de desarrollo de software", "Trabajo Práctico Integrador"
                 ],

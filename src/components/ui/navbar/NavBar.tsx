@@ -50,7 +50,7 @@ export const NavBar = () => {
     const section = document.getElementById(sectionName);
     if (section) {
       const rect = section.getBoundingClientRect();
-      const offset = window.scrollY + rect.top - 0; // Ajusta el valor (60) según la altura del NavBar.
+      const offset = window.scrollY + rect.top - 60; // Ajusta el valor (60) según la altura del NavBar.
       window.scrollTo({ top: offset, behavior: "smooth" });
     }
   }

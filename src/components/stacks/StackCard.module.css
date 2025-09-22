@@ -37,21 +37,3 @@
 .techName {
   font-size: 10px;
 }
-
-/* @media (max-width: 650px) {
-  .container {
-    margin: auto;
-  }
-  .container ul {
-    display: grid;
-    align-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 510px) {
-  .container ul {
-    grid-template-columns: repeat(3, 1fr);
-  }
-} */
