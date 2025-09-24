@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { Techs } from "@/interfaces/projects.interface";
@@ -10,8 +9,10 @@ import {
   linkedInIcon,
 } from "@/components/ui/Icons";
 import { StackCard } from "@/components/stacks/StackCard";
+import { fontMedievalSharp } from "@/fonts/fonts";
+import styles from "./Home.module.css";
 
-const frontEndTitle = "Front-end Stack"
+const frontEndTitle = "Front-end Stack";
 const frontEndTechs: Techs[] = [
   { name: "HTML" },
   { name: "CSS" },
@@ -21,10 +22,9 @@ const frontEndTechs: Techs[] = [
   { name: "Next.js" },
   { name: "Zustand" },
   { name: "Redux" },
-  
-]
+];
 
-const backEndTitle = "Back-end Stack"
+const backEndTitle = "Back-end Stack";
 const backEndTechs: Techs[] = [
   { name: "Node.js" },
   { name: "Express.js" },
@@ -35,40 +35,37 @@ const backEndTechs: Techs[] = [
   { name: "Prisma" },
   { name: "MongoDB" },
   { name: "Docker" },
-]
+];
 
 export const HomePage = () => {
   return (
     <div id="Home" className={styles.container}>
+      <h1>DESARROLLADOR FULL-STACK</h1>
       <div className={styles.sectionContainer}>
         <section>
           <p>
             <b>Bienvenidos</b> a mi página web!
             <br />
-            Soy un <b>programador front-end</b> <br />
-            con un gran apetito por construir increibles <b>
-              aplicaciones web
-            </b>{" "}
-            y <b>mobile</b> que ayuden a las personas y sus negocios a{" "}
-            <b>crecer exponencialmente</b>. <br />
-            Busco también adentrarme cada vez más en tecnologías <b>back-end</b>
-            .
-            <br />
-            Colabora conmigo y <br />
-            <b>alcancemos juntos éxito!</b>
+            Soy un <b>programador front-end</b> con un gran apetito por
+            construir increibles <b>aplicaciones web</b> y <b>mobile</b> que
+            ayuden a las personas y sus negocios a{" "}
+            <b>crecer exponencialmente</b>. Busco también adentrarme cada vez
+            más en tecnologías <b>back-end</b>.
+          </p>
+          <p>
+            Colabora conmigo y <b>alcancemos juntos éxito!</b>
           </p>
         </section>
         <aside>
-          <h1>DESARROLLADOR FULL-STACK</h1>
-          <p>de la Fuente, Lucas</p>
-
           <Image
-            src="/profile/profile-photo.jpg"
+            src="/profile/profile-photo2.jpeg"
             alt="profile-photo"
             width={130}
-            height={130}
+            height={150}
             className={styles.profileImage}
           />
+          
+          <p className={fontMedievalSharp.className}>Lucas de la Fuente</p>
 
           <div className={styles.socialWebs}>
             <Link href="https://github.com/Lucano17" target="_blank">

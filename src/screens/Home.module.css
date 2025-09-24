@@ -1,81 +1,119 @@
 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .sectionContainer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .sectionContainer section {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 10px;
 }
 
 .sectionContainer section p b {
-    color: rgb(252, 103, 195);
+  color: rgb(252, 103, 195);
 }
 
 .sectionContainer p {
-    text-align: left;
-    width: 300px;
+  text-align: left;
+  width: 300px;
 }
 
 .sectionContainer aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sectionContainer aside h1 {
-    color: rgb(252, 103, 195);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .sectionContainer aside p {
-    text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+  background: linear-gradient(
+    90deg,
+    #fdf4f9,
+    #fb99cd,
+    rgb(246, 83, 157),
+    #fb99cd,
+    #fdf4f9
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+.container h1 {
+  color: rgb(252, 103, 195);
+  justify-content: center;
+  margin: auto;
+  font-size: 25px
+}
+
+.sectionContainer aside p {
+  text-align: center;
 }
 
 .profileImage {
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: 10px;
-  }
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -10px;
+}
 
 .socialWebs {
-    display: flex;
-    justify-content: center;
-    color: rgb(255, 0, 170);
-    margin-top: 15px;
-    gap: 20px;
-    font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 0, 170);
+  margin-top: 15px;
+  gap: 20px;
+  font-size: 30px;
 }
 
 .stacks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
 }
 
 @media (max-width: 650px) {
-    .sectionContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .sectionContainer section {
-        order: 2;
-        margin-left: 50px;
-      }
-    
-      .sectionContainer aside {
-        order: 1;
-      }
-      .stacks {
-        flex-direction: column;
-        margin: auto;
-        margin-top: 30px;
+  .sectionContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionContainer section {
+    order: 2;
+    margin-left: 50px;
+  }
+
+  .sectionContainer aside {
+    order: 1;
+  }
+  .stacks {
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 410px) {
+    .container h1 {
+        text-align: center;
     }
 }
