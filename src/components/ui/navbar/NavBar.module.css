@@ -71,8 +71,6 @@
         animation: shine 3s linear infinite;
     }
     
-    
-    
     .closeIcon {
         font-size: 2em;
         margin-top: 30px;
@@ -157,5 +155,7 @@
 }
 
 @media (max-width: 410px) {
-
+    .logo {
+        flex-direction: column;
+    }
 }

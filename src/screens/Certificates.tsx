@@ -9,7 +9,7 @@ export const Certificates = () => {
   return (
     <div id='Certificates' className={styles.container}>
       <h2>Mis certificados</h2>
-      <div className={styles.projectsGrid}>
+      <div className={styles.certificatesGrid}>
           <CertificatessGrid certificates={myCertificates} />
       </div>
     </div>

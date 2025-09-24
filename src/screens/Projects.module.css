@@ -9,3 +9,7 @@
     color: rgb(252, 103, 195);
     border-bottom: 1px solid pink;
 }
+
+.projectsGrid {
+    margin-top: 15px;
+}

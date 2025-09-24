@@ -77,9 +77,6 @@
 }
 
 @media (max-width: 800px) {
-    .contact {
-        margin-top: 0px;
-    }
     .form {
         width: 80%;
     }
