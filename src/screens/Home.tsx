@@ -40,7 +40,7 @@ const backEndTechs: Techs[] = [
 export const HomePage = () => {
   return (
     <div id="Home" className={styles.container}>
-      <h1>DESARROLLADOR FULL-STACK</h1>
+      <h1>PROGRAMADOR FULL-STACK</h1>
       <div className={styles.sectionContainer}>
         <section>
           <p>

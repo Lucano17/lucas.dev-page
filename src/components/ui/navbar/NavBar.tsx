@@ -12,14 +12,17 @@ export const NavBar = () => {
   // activeSection
   const [activeSection, setActiveSection] = useState("Home");
   const scrollPosition = useScrollPosition();
-  
-  const links = useMemo(() => [
-    { id: 1, link: "Home", navName: "Inicio" },
-    { id: 2, link: "Education", navName: "Educación" },
-    { id: 3, link: "Projects", navName: "Proyectos" },
-    { id: 4, link: "Certificates", navName: "Certificados" },
-    { id: 5, link: "Contact", navName: "Contacto" }
-  ], []);
+
+  const links = useMemo(
+    () => [
+      { id: 1, link: "Home", navName: "Inicio" },
+      { id: 2, link: "Education", navName: "Educación" },
+      { id: 3, link: "Projects", navName: "Proyectos" },
+      { id: 4, link: "Certificates", navName: "Certificados" },
+      { id: 5, link: "Contact", navName: "Contacto" },
+    ],
+    []
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,26 +47,25 @@ export const NavBar = () => {
   }, [scrollPosition, links]);
 
   const handleSectionClick = (sectionName: string) => {
-  if (sectionName === "Home") {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  } else {
-    const section = document.getElementById(sectionName);
-    if (section) {
-      const rect = section.getBoundingClientRect();
-      const offset = window.scrollY + rect.top - 60; // Ajusta el valor (60) según la altura del NavBar.
-      window.scrollTo({ top: offset, behavior: "smooth" });
+    if (sectionName === "Home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const section = document.getElementById(sectionName);
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        const offset = window.scrollY + rect.top - 60; // Ajusta el valor (60) según la altura del NavBar.
+        window.scrollTo({ top: offset, behavior: "smooth" });
+      }
     }
-  }
 
-  setActiveSection(sectionName);
-  setNavBarOpen(false);
-};
+    setActiveSection(sectionName);
+    setNavBarOpen(false);
+  };
 
   const [windowDimention, setWindowDimention] = useState({
     width: 0,
     height: 0,
   });
-
 
   useEffect(() => {
     setWindowDimention({
@@ -84,8 +86,6 @@ export const NavBar = () => {
     };
   }, []);
 
-
-
   return (
     <>
       <div
@@ -99,10 +99,18 @@ export const NavBar = () => {
         }
       >
         {!navBarOpen && (
-          <p className={styles.logo}>
-            <button onClick={()=>{handleSectionClick("Home")}}>Lucas.dev | </button>
-            Web development
-          </p>
+          <div className={styles.logo}>
+            <button
+              className={styles.logoButton}
+              onClick={() => {
+                handleSectionClick("Home");
+              }}
+            >
+              Lucas.dev |{" "}
+            </button>
+
+            <p>Desarrollo de software</p>
+          </div>
         )}
 
         {!navBarOpen && windowDimention.width < 1070 ? (
@@ -113,14 +121,25 @@ export const NavBar = () => {
           />
         ) : (
           windowDimention.width < 1070 && (
-            <IoCloseSharp
-              className={styles.closeIcon}
-              onClick={() => setNavBarOpen(!navBarOpen)}
-              color="white"
-            />
+            <div className={styles.mobileHeader}>
+              <button
+                className={styles.logoButton}
+                onClick={() => {
+                  handleSectionClick("Home");
+                }}
+              >
+                Lucas.dev
+              </button>
+              <IoCloseSharp
+                className={styles.closeIcon}
+                onClick={() => setNavBarOpen(!navBarOpen)}
+                color="white"
+              />
+            </div>
           )
         )}
         {navBarOpen && (
+          // Mobile
           <ul className={styles.linksContainer}>
             <li>
               {links.map((x) => (
