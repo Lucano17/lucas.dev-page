@@ -86,6 +86,10 @@ export const NavBar = () => {
     };
   }, []);
 
+  if (navBarOpen && windowDimention.width > 1070){
+    setNavBarOpen(!navBarOpen);
+  }
+
   return (
     <>
       <div
