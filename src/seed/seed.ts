@@ -52,7 +52,7 @@ export const projects: ProjectsData = {
             "webLink": "",
             "platform": { name: "Web" },
             "images": ["lucas.dev-page.image1.png"],
-            "description": "Mi propia página web, hecha con TypeScript y Next (próximamente este proyecto será mudado a Astro), donde expongo mis conocimientos, proyectos y habilidades",
+            "description": "Mi propia página web, hecha con TypeScript y Next, donde expongo mis conocimientos, proyectos y habilidades",
             "techsUsed": [
                 { name: "HTML" },
                 { name: "CSS" },
@@ -248,7 +248,7 @@ export const certificates: CertificatesData = {
     certificates: [
         {
             "id": 1,
-            title: "Next.js framework with TypeScript",
+            title: "Next.js, el framework de React con TypeScript",
             description: "Este curso cuenta con una amplia gama de tecnologías y recursos altamente útiles para desarrollar aplicaciones web robustas. Entre las más testacables se encuentran TypeScript, React.js, Next.js, base de datos SQL y más. Este curso cuenta con un proyecto final muy completo: un E-commerce con base de datos SQL, registro y gestión de usuarios, con sus roles y permisos pertinentes. Además le agregué por mi cuenta transacciones de pago mediante Mercado Pago (el curso está hecho con PayPal, pero no tengo permisos en Argentina). Este proyecto me parece muy interesante, ya que cuenta con un fuerte desarrollo tanto en el Front-end como en el Back-end.",
             techsLearned: [
                 { name: "HTML" },
