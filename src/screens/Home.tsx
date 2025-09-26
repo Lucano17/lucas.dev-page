@@ -68,19 +68,20 @@ export const HomePage = () => {
           <p className={fontMedievalSharp.className}>Lucas de la Fuente</p>
 
           <div className={styles.socialWebs}>
-            <Link href="https://github.com/Lucano17" target="_blank">
+            <Link href="https://github.com/Lucano17" target="_blank" title="GitHub">
               {gitHubIcon}
             </Link>
-            <Link href="/mailRedirect" target="_blank">
+            <Link href="/mailRedirect" target="_blank" title="E-mail">
               {gmailIcon}
             </Link>
             <Link
               href="https://www.linkedin.com/in/lucas-de-la-fuente-040b01188/"
               target="_blank"
+              title="LinkedIn"
             >
               {linkedInIcon}
             </Link>
-            <a href="pdf/cv-esp.pdf" download="CV-Lucas.delaFuente-Esp.pdf">
+            <a href="pdf/cv-esp.pdf" download="CV-Lucas.delaFuente-Esp.pdf" title="Curriculum Vitae">
               {cvIcon}
             </a>
           </div>

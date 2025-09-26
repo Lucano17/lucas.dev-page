@@ -49,9 +49,9 @@ export const ProjectCard = ({ project }: Props) => {
           <div className={styles.techsContainer}>
             {project?.techsUsed && project.techsUsed.length > 0
               ? project.techsUsed.map((tech, index) => (
-                  <div key={index} className={styles.tech} title={tech.name}>
+                  <p key={index} className={styles.tech} title={tech.name}>
                     {techIcons[tech.name || ""] || null}
-                  </div>
+                  </p>
                 ))
               : ""}
           </div>
