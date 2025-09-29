@@ -35,6 +35,7 @@ export const education: EducationData = {
                 ],
             },
             planEstudioPDF: "tup.pdf",
+            state: "En curso",
             startedAt: "11/08/2025"
         }]
 }

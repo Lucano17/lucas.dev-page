@@ -29,7 +29,7 @@ export const EducationCard = ({ education }: Props) => {
       </div>
       <div className={styles.dataContainer}>
         <p><span>Grado: </span>{education.grade}</p>
-        <p><span>Empezado el: </span>{education.startedAt}</p>
+        <p><span>Estado: </span>{education.state}</p>
         <p><span>Años de carrera: </span>{education.years} años</p>
         <p><span>Horas cátedra: </span>{education.hours}hs</p>
       </div>

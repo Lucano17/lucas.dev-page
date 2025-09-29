@@ -1,3 +1,8 @@
+export type ValidStates =
+    "En curso" |
+    "Completado"
+
+
 export interface Education {
     id: number,
     institutionName: string,
@@ -8,5 +13,6 @@ export interface Education {
     hours: number,
     planEstudio: object,
     planEstudioPDF: string,
+    state: ValidStates,
     startedAt: string
 }
