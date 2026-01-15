@@ -76,7 +76,7 @@ export const projects: ProjectsData = {
             "webLink": "https://ecommerce-template-1.vercel.app/",
             "platform": { name: "Web" },
             "images": ["ecommerce-template.image1.png"],
-            "description": "Este es un ecommerce de prueba hecho con Next y PosgreSQL, donde probé todas mis habilidades en conjunto para crear una tienda completamente funcional con base de datos y transacciones.",
+            "description": "Este es la demo de un ecommerce hecho con Next y PosgreSQL, donde probé todas mis habilidades en conjunto para crear una tienda completamente funcional con base de datos y transacciones.",
             "techsUsed": [
                 { name: "HTML" },
                 { name: "CSS" },
@@ -110,7 +110,7 @@ export const projects: ProjectsData = {
             "webLink": "https://task-manager-sigma-two-21.vercel.app/",
             "platform": { name: "Web" },
             "images": ["task-manager.image1.png"],
-            "description": "Una TO-DO app hecha con react y express, donde puedes crear una lista de lo que necesites! Desde productos para comprar, actividades a realizar, personas, objetivos y más!",
+            "description": "Una TO-DO app hecha con react y express, donde podés crear una lista de lo que necesités! Desde productos para comprar, actividades a realizar, personas, objetivos ¡y más!",
             "techsUsed": [
                 { name: "HTML" },
                 { name: "CSS" },
@@ -137,7 +137,7 @@ export const projects: ProjectsData = {
             "webLink": "https://poke-api-vert-one.vercel.app",
             "platform": { name: "Web" },
             "images": ["poke-api.image1.png"],
-            "description": "No solo una simple PokeApi, toda la PokeInfo que buscas! Cuenta con un menú para ver una lista de los 151 pokémon de Kanto, tus evoluciones, sus sprites, sus versiones variocolor (shiny) y sus movimientos. También podrás ver sus tipos elementales, con un diseño personalizado para cada uno. También podrás marcar tus pokémon favoritos y guardarlos en el almacenamiento local de tu navegador de preferencia",
+            "description": "No solo una simple PokeApi, toda la PokeInfo que buscás! Cuenta con un menú para ver una lista de los 151 pokémon de Kanto, sus evoluciones, sus sprites, sus versiones variocolor (shiny) y sus movimientos. También podrás ver sus tipos elementales, con un diseño personalizado para cada uno. También podrás marcar tus pokémon favoritos y guardarlos en el almacenamiento local de tu navegador de preferencia",
             "techsUsed": [
                 { name: "HTML" },
                 { name: "TailwindCSS" },
@@ -205,7 +205,7 @@ export const projects: ProjectsData = {
             "webLink": "",
             "platform": { name: "Escritorio" },
             "images": ["mid-pos-system.image1.png"],
-            "description": "Desarrollé un Punto de Venta con C#, .NET 8, WinForms y Microsoft SQL Server, donde no solo podés realizar tus ventas con una interfaz cómoda, eficiente e intuitiva, sino también ordenar tus productos por categoráis, manejar distintos timpos y roles de usuario, ver el historial de ventas, ventas realizadas por tus vendedores, realizar reportes de las mismas y mucho más!.",
+            "description": "Desarrollé un Punto de Venta con C#, .NET 8, WinForms y Microsoft SQL Server, donde no solo podés realizar tus ventas con una interfaz cómoda, eficiente e intuitiva, sino también ordenar tus productos por categorías, manejar distintos tipos y roles de usuario, ver el historial de ventas, ventas realizadas por tus vendedores, y realizar reportes de las mismas",
             "techsUsed": [
                 { name: "C#" },
                 { name: ".Net" },

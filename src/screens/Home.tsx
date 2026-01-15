@@ -46,10 +46,10 @@ export const HomePage = () => {
           <p>
             <b>Bienvenidos</b> a mi página web!
             <br />
-            Soy un <b>programador front-end</b> con un gran apetito por
-            construir increibles <b>aplicaciones web</b> y <b>mobile</b> que
+            Soy un <b>programador</b> con un gran apetito por
+            construir increibles <b>aplicaciones web</b> y de <b>escritorio</b> que
             ayuden a las personas y sus negocios a{" "}
-            <b>crecer exponencialmente</b>. Busco también adentrarme cada vez
+            <b>crecer exponencialmente</b>. Empecé aprendiendo tecnologías <b>front-end</b> pero también quiero adentrarme cada vez
             más en tecnologías <b>back-end</b>.
           </p>
           <p>
@@ -58,7 +58,7 @@ export const HomePage = () => {
         </section>
         <aside>
           <Image
-            src="/profile/profile-photo2.jpeg"
+            src="/profile/profile-photo4.jpeg"
             alt="profile-photo"
             width={130}
             height={150}
@@ -81,7 +81,7 @@ export const HomePage = () => {
             >
               {linkedInIcon}
             </Link>
-            <a href="pdf/cv-lucas.dev-esp.pdf" download="CV-Lucas.delaFuente-Esp.pdf" title="Curriculum Vitae">
+            <a href="pdf/CV-Lucas.delaFuente-Esp.pdf" download="CV-Lucas.delaFuente-Esp.pdf" title="Curriculum Vitae">
               {cvIcon}
             </a>
           </div>
