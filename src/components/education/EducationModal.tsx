@@ -46,7 +46,7 @@ export const EducationModal = ({ education }: Props) => {
             )
           )}
           <a
-          href="education/tup.pdf"
+          href="education/utn-Tecnicatura.Universitaria.en.Programacion.pdf"
           download="utn-Tecnicatura.Universitaria.en.Programacion.pdf"
           className={styles.downloadPDF}>
             Descargar
