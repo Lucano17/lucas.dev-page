@@ -1,5 +1,6 @@
 import { Certificate } from "@/interfaces/certificates.interface";
 import { Education } from "@/interfaces/education.interface";
+import { Experience } from "@/interfaces/experience.interface";
 import { Project } from "@/interfaces/projects.interface";
 
 interface ProjectsData {
@@ -12,6 +13,10 @@ interface CertificatesData {
 
 interface EducationData {
     careers: Education[]
+}
+
+interface ExperienceData {
+    experience: Experience[]
 }
 
 export const education: EducationData = {
@@ -38,6 +43,23 @@ export const education: EducationData = {
             state: "En curso",
             startedAt: "11/08/2025"
         }]
+}
+
+export const experience: ExperienceData = {
+    experience: [
+        {
+            id: "1",
+            company: "Volkswagen Argentina",
+            position: "Desarrollador de software (Pasantía)",
+            initDate: new Date('2026-05-08'),
+            endDate: new Date('2026-09-01'),
+            location: "Buenos Aires, Argentina",
+            tasks: [
+                "Desarrollamos una aplicación web para la optimización del flujo de repuestos y herramientas de uno de los sectores de las fábricas de Volkswagen, a su vez creamos un gemelo digital 3D para que los operadores puedan ubicar los ítems que necesitan, y ver detalles importantes y críticos de los mismos, así como un Dashboard con información importante y avisos. El desarrollo de esta app fue hecho con Typescript, React.js, Three.js y Tauri.",
+                "Se trabajó de forma colaborativa y organizada con compañeros de equipo, dividiendonós tareas y teniendo encuentros semanales para poder enfocarnos y avanzar más eficazmente. Utilizamos la herramienta GitHub para manejar ramas y versiones del trabajo."
+            ]
+        }
+    ]
 }
 
 export const projects: ProjectsData = {

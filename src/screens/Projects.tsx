@@ -8,7 +8,7 @@ const myProjects = projects.projects
 export const Projects = () => {
   return (
     <div id='Projects' className={styles.container}>
-      <h2>Mis proyectos</h2>
+      <h2>Proyectos</h2>
       <div className={styles.projectsGrid}>
           <ProjectsGrid projects={myProjects} />
       </div>

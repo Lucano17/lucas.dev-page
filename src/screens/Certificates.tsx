@@ -8,7 +8,7 @@ const myCertificates = certificates.certificates
 export const Certificates = () => {
   return (
     <div id='Certificates' className={styles.container}>
-      <h2>Mis certificados</h2>
+      <h2>Certificados</h2>
       <div className={styles.certificatesGrid}>
           <CertificatessGrid certificates={myCertificates} />
       </div>

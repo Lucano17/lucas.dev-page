@@ -16,10 +16,11 @@ export const NavBar = () => {
   const links = useMemo(
     () => [
       { id: 1, link: "Home", navName: "Inicio" },
-      { id: 2, link: "Education", navName: "Educación" },
-      { id: 3, link: "Projects", navName: "Proyectos" },
-      { id: 4, link: "Certificates", navName: "Certificados" },
-      { id: 5, link: "Contact", navName: "Contacto" },
+      { id: 2, link: "Experience", navName: "Experiencia" },
+      { id: 3, link: "Education", navName: "Educación" },
+      { id: 4, link: "Projects", navName: "Proyectos" },
+      { id: 5, link: "Certificates", navName: "Certificados" },
+      { id: 6, link: "Contact", navName: "Contacto" }
     ],
     []
   );
