@@ -20,6 +20,18 @@
     align-items: center;
 }
 
+.input, .options, .form textarea {
+        box-sizing: border-box;
+            width: 100%;
+                border: 2px solid #413b5e;
+                    background: none;
+                        color: white;
+                            padding: 8px 12px;
+                                border-radius: 5px;
+                                    margin-top: 5px;
+                                    }
+}
+
 .input {
     height: 30px;
 }
