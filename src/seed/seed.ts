@@ -301,6 +301,19 @@ export const certificates: CertificatesData = {
             image: ["certificate.csharp.jpg"],
             certificateURL: "ude.my/UC-a666080c-b18b-4d33-a3a4-d5f9da0979e4",
             certificateNumber: "UC-a666080c-b18b-4d33-a3a4-d5f9da0979e4",
+        },
+        {
+            "id": 3,
+            title: "Master API RESTful con ASP.NET Core (.NET 9)",
+            description: "En este curso aprendí los a crear una API con ASP.NET Web Api, aplicando controladores y buenas prácticas, además de utilizar una base de datos SQL.",
+            techsLearned: [
+                { name: "C#" },
+                { name: ".Net" },
+                { name: "Microsoft SQL Server" },
+            ],
+            image: ["certificate.api.csharp.jpg"],
+            certificateURL: "ude.my/UC-f6e567d6-a0dd-42b7-a758-cd734e738993",
+            certificateNumber: "UC-f6e567d6-a0dd-42b7-a758-cd734e738993",
         }
     ]
 }

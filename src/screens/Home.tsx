@@ -71,11 +71,11 @@ export const HomePage = () => {
             <Link href="https://github.com/Lucano17" target="_blank" title="GitHub">
               {gitHubIcon}
             </Link>
-            <Link href="/mailRedirect" target="_blank" title="E-mail">
+            <Link href="mailto:lucasdelafuente.dev@gmail.com" target="_blank" title="E-mail">
               {gmailIcon}
             </Link>
             <Link
-              href="https://www.linkedin.com/in/lucas-de-la-fuente-040b01188/"
+              href="https://www.linkedin.com/in/lucas-de-la-fuente-dev/"
               target="_blank"
               title="LinkedIn"
             >
