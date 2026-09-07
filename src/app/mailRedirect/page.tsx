@@ -6,7 +6,7 @@ export default function MailRedirect() {
 
   useEffect(() => {
     window.location.href =
-      "mailto:lucasdlf17@gmail.com?subject=(Dígame su asunto)&body=(Dígame su mensaje)";
+      "mailto:lucasdelafuente.dev@gmail.com?subject=(Dígame su asunto)&body=(Dígame su mensaje)";
   }, []);
 
   return null;

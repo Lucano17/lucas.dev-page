@@ -91,16 +91,18 @@
 }
 
 @media (max-width: 780px) {
-    .timelineAxis {
-        padding-left: 1.5rem; /* Achica el espacio interno para que entre el texto */
-            margin-left: 0.5rem;  /* Despega la línea rosa del borde de la pantalla */
-              }
+  .timelineAxis {
+    padding-left: 1.5rem; /* Achica el espacio interno para que entre el texto */
+    margin-left: 0.5rem; /* Despega la línea rosa del borde de la pantalla */
+  }
 
-                .circle {
-                    left: calc(-1.5rem - 1px); /* Reajusta el círculo para que calce con el nuevo padding */
-                      }
+  .circle {
+    left: calc(
+      -1.5rem - 1px
+    ); /* Reajusta el círculo para que calce con el nuevo padding */
+  }
 
-                        .position {
-                            font-size: 1.1rem; /* Achica un toque el título para que no se corte feo */
-                              }
-                              }
+  .position {
+    font-size: 1.1rem; /* Achica un toque el título para que no se corte feo */
+  }
+}

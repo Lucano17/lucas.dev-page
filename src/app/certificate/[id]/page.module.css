@@ -110,7 +110,7 @@
   margin-top: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 780px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -118,12 +118,20 @@
   }
   .mainContent {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 100%;
   }
   .section {
+    width: 100%;
     max-width: 100%;
+    align-items: center;
   }
   .aside {
+    width: 100%;
     max-width: 100%;
+    align-items: center;
   }
   .techGrid {
     grid-template-columns: repeat(3, 1fr);
