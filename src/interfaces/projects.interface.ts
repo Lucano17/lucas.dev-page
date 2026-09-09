@@ -46,6 +46,7 @@ export type ValidTechs =
     | "Prisma"
     | "Redux"
     | "Zustand"
+    | "Tauri"
 
 
 export interface Platform {

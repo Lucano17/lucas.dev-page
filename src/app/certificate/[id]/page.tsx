@@ -10,7 +10,9 @@ type tParams = Promise<{ id: string }>;
 
 export async function generateMetadata({ params }: { params: tParams }) {
   const id = Number((await params).id);
-  const certificate = certificates.certificates.find((certificate) => certificate.id === id);
+  const certificate = certificates.certificates.find(
+    (certificate) => certificate.id === id,
+  );
 
   if (!id) {
     return {
@@ -37,7 +39,9 @@ export async function generateMetadata({ params }: { params: tParams }) {
 
 export default async function ProjectPage({ params }: { params: tParams }) {
   const id = Number((await params).id);
-  const certificate = certificates.certificates.find((certificate) => certificate.id === id);
+  const certificate = certificates.certificates.find(
+    (certificate) => certificate.id === id,
+  );
 
   if (!certificate) {
     notFound();
@@ -54,22 +58,31 @@ export default async function ProjectPage({ params }: { params: tParams }) {
             height={250}
             className={styles.projectImage}
           />
-          <div className={styles.certificateNumber}>
-          <h3>Número del certificado:</h3>
-          <p>{certificate.certificateNumber}</p>
-          </div>
-          <div className={styles.linksContainer}>
-            <h3>Visita el sitio web oficial del certificado:</h3>
-            <div className={styles.projectLinks}>
-              <Link
-                href={`https://${certificate?.certificateURL}`}
-                target="_blank"
-                className={styles.link}
-              >
-                Link del certificado <span>{webLinkIcon}</span>
-              </Link>
+          {certificate.certificateNumber ? (
+            <div className={styles.certificateNumber}>
+              <h3>Número del certificado:</h3>
+              <p>{certificate.certificateNumber}</p>
             </div>
-          </div>
+          ) : (
+            ""
+          )}
+
+          {certificate.certificateURL ? (
+            <div className={styles.linksContainer}>
+              <h3>Visita el sitio web oficial del certificado:</h3>
+              <div className={styles.projectLinks}>
+                <Link
+                  href={`https://${certificate?.certificateURL}`}
+                  target="_blank"
+                  className={styles.link}
+                >
+                  Link del certificado <span>{webLinkIcon}</span>
+                </Link>
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
         </section>
         <aside className={styles.aside}>
           <div className={styles.data}>
@@ -90,18 +103,15 @@ export default async function ProjectPage({ params }: { params: tParams }) {
               </div>
             </div>
           </div>
-            
-            {
-              certificate.description?
-                (
-                  <div className={styles.description}>
-                  <h3>Descripción</h3>
-                  <p>{certificate.description}</p>
-                  </div>
-                )
-              : ("")
-            }
-            
+
+          {certificate.description ? (
+            <div className={styles.description}>
+              <h3>Descripción</h3>
+              <p>{certificate.description}</p>
+            </div>
+          ) : (
+            ""
+          )}
         </aside>
       </div>
     </div>

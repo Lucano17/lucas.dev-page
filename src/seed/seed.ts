@@ -56,7 +56,7 @@ export const experience: ExperienceData = {
             location: "Buenos Aires, Argentina",
             tasks: [
                 "Desarrollamos una aplicación web para la optimización del flujo de repuestos y herramientas de uno de los sectores de las fábricas de Volkswagen, a su vez creamos un gemelo digital 3D para que los operadores puedan ubicar los ítems que necesitan, y ver detalles importantes y críticos de los mismos, así como un Dashboard con información importante y avisos. El desarrollo de esta app fue hecho con Typescript, React.js, Three.js y Tauri.",
-                "Se trabajó de forma colaborativa y organizada con compañeros de equipo, dividiendonós tareas y teniendo encuentros semanales para poder enfocarnos y avanzar más eficazmente. Utilizamos la herramienta GitHub para manejar ramas y versiones del trabajo."
+                "Se trabajó de forma colaborativa y organizada con compañeros de equipo, dividiendonós tareas y teniendo encuentros semanales para poder enfocarnos y avanzar más eficazmente."
             ]
         }
     ]
@@ -271,6 +271,19 @@ export const certificates: CertificatesData = {
     certificates: [
         {
             "id": 1,
+            title: "Volkswagen Argentina: Optimización de flujo",
+            description: "Tuve la oportunidad de participar en un programa de pasantías para Volkswagen Argentina, con el trabajo en equipo de dos carreras, Tecnicatura Universitaria en Programación y Tecnicatura Universitaria en Gestión de la Industria Automotriz, ideamos y desarrollamos en conjunto un programa para la optimización de flujo de los ítems que posee uno de los sectores de la fábrica.",
+            techsLearned: [
+                { name: "React.js" },
+                { name: "CSS" },
+                { name: "TypeScript" },
+            ],
+            image: ["certificate.pasantia.vw.png"],
+            certificateURL: "",
+            certificateNumber: "",
+        },
+        {
+            "id": 2,
             title: "Next.js, el framework de React con TypeScript",
             description: "Este curso cuenta con una amplia gama de tecnologías y recursos altamente útiles para desarrollar aplicaciones web robustas. Entre las más testacables se encuentran TypeScript, React.js, Next.js, base de datos SQL y más. Este curso cuenta con un proyecto final muy completo: un E-commerce con base de datos SQL, registro y gestión de usuarios, con sus roles y permisos pertinentes. Además le agregué por mi cuenta transacciones de pago mediante Mercado Pago (el curso está hecho con PayPal, pero no tengo permisos en Argentina). Este proyecto me parece muy interesante, ya que cuenta con un fuerte desarrollo tanto en el Front-end como en el Back-end.",
             techsLearned: [
@@ -288,7 +301,7 @@ export const certificates: CertificatesData = {
             certificateNumber: "UC-d74a1298-b34a-4e14-86c7-8fb824f7d678",
         },
         {
-            "id": 2,
+            "id": 3,
             title: "Curso profesional de C# Avanzado",
             description: "En este curso aprendí los fundamentos de C# y .NET, además de aprender y usar la interfaz gráfica de Windows Forms y ASP.NET, y la base de datos Microsoft SQL Server. Este curso cuenta con un proyecto final muy interesante, una aplicación Point of Sell de escritorio, con registro y gestión de usuarios, con sus roles y permisos pertinentes. Con lo aprendido en este curso, podré desarrollar tanto aplicaciones de escritorio como para la web.",
             techsLearned: [
@@ -303,7 +316,7 @@ export const certificates: CertificatesData = {
             certificateNumber: "UC-a666080c-b18b-4d33-a3a4-d5f9da0979e4",
         },
         {
-            "id": 3,
+            "id": 4,
             title: "Master API RESTful con ASP.NET Core (.NET 9)",
             description: "En este curso aprendí los a crear una API con ASP.NET Web Api, aplicando controladores y buenas prácticas, además de utilizar una base de datos SQL.",
             techsLearned: [
