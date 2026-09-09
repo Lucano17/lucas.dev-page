@@ -69,8 +69,8 @@ export const projects: ProjectsData = {
         {
             "id": 1,
             "title": "Mi portfolio",
-            "show": true,
-            "position": 1,
+            "show": false,
+            "position": 0,
             "gitHubLink": "https://github.com/Lucano17/lucas.dev-page",
             "webLink": "",
             "platform": { name: "Web" },
@@ -90,7 +90,7 @@ export const projects: ProjectsData = {
             ],
         },
         {
-            "id": 2,
+            "id": 1,
             "title": "Tienda online",
             "show": true,
             "position": 2,
@@ -127,7 +127,7 @@ export const projects: ProjectsData = {
             "id": 3,
             "title": "Tasks Manager",
             "show": true,
-            "position": 4,
+            "position": 3,
             "gitHubLink": "https://github.com/Lucano17/task-manager",
             "webLink": "https://task-manager-sigma-two-21.vercel.app/",
             "platform": { name: "Web" },
