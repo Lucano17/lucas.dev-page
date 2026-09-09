@@ -47,6 +47,8 @@ export type ValidTechs =
     | "Redux"
     | "Zustand"
     | "Tauri"
+    | "Github"
+    | "Scrum"
 
 
 export interface Platform {

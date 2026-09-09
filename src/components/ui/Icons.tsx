@@ -21,7 +21,7 @@ import {
   SiExpress,
   SiRedux,
 } from "react-icons/si";
-import { DiMsqlServer, DiDotnet } from "react-icons/di";
+import { DiMsqlServer, DiDotnet, DiScrum } from "react-icons/di";
 import {
   TbSquareLetterZ,
   TbBrandReactNative,
@@ -59,6 +59,8 @@ export const techIcons: Record<string, JSX.Element | string> = {
   MongoDB: <SiMongodb />,
   Redux: <SiRedux />,
   Zustand: <TbSquareLetterZ />,
+  Github: <IoLogoGithub />,
+  Scrum: <DiScrum />,
 };
 
 export const gitHubIcon = <IoLogoGithub />;

@@ -37,6 +37,12 @@ const backEndTechs: Techs[] = [
   { name: "Docker" },
 ];
 
+const softSkillsTitle = "Soft skills";
+const softSkillsTechs: Techs[] = [
+  { name: "Github" },
+  { name: "Scrum" },
+];
+
 export const HomePage = () => {
   return (
     <div id="Home" className={styles.container}>
@@ -91,6 +97,7 @@ export const HomePage = () => {
       <div className={styles.stacks}>
         <StackCard title={frontEndTitle} techsUsed={frontEndTechs} />
         <StackCard title={backEndTitle} techsUsed={backEndTechs} />
+        <StackCard title={softSkillsTitle} techsUsed={softSkillsTechs}/>
       </div>
     </div>
   );
