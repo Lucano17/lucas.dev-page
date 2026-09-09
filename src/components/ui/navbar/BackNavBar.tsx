@@ -82,7 +82,7 @@ export const BackNavBar = () => {
         {!navBarOpen && (
           <p className={styles.logo}>
             <Link href={"/"}> <span className={styles.titleButton}> Lucas.dev | </span></Link>
-            Web development
+            Desarrollo de software
           </p>
         )}
 

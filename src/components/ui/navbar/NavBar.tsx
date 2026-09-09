@@ -114,7 +114,7 @@ export const NavBar = () => {
               Lucas.dev |{" "}
             </button>
 
-            <p>Desarrollo de software</p>
+            <p>Desarrollador de software</p>
           </div>
         )}
 
